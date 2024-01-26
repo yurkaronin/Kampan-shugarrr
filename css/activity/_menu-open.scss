@@ -1,0 +1,30 @@
+.menu-open {
+  overflow: hidden;
+  margin-right: 17px;
+  .header {
+    background: var(--White);
+  }
+  .header__logo {
+    max-width: 90px;
+    opacity: 1;
+    svg g,
+    svg defs path {
+      transition: fill 0.3s;
+      fill: var(--PinkRed);
+    }
+  }
+  .mob-nav {
+    opacity: 1;
+    visibility: initial;
+    pointer-events: initial;
+  }
+  .header__wrapper {
+    border-bottom: 1px solid var(--Line-mod);
+  }
+
+  @media (max-width: 1023px) {
+    .header__logo {
+      max-width: 70px;
+    }
+  }
+}

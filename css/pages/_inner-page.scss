@@ -1,0 +1,19 @@
+.inner-page {
+  background-color: var(--Orange-Yellow);
+
+  .header {
+    background: var(--Orange, #fe7f00);
+  }
+  .main {
+    padding-top: 124px;
+  }
+
+  @media (max-width: 1023px) {
+    .main {
+      padding-top: 80px;
+    }
+  }
+  @media (max-width: 767px) {
+  }
+
+}

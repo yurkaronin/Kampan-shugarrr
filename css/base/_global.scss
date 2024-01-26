@@ -1,0 +1,123 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html *,
+html *::before,
+html *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 375px;
+  font-size: 16px;
+  font-family: var(--Lora);
+  position: relative;
+  overflow-x: hidden;
+  background-color: var(--Bg, #e9e7e2);
+  color: var(--Dark, #36363c);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.16px;
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+input,
+textarea,
+a,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-style: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--TenorSans);
+  color: var(--Dark, #36363c);
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: 400;
+}
+
+// p:not([class]):first-of-type {
+//   margin-top: 0;
+// }
+
+a:not([class]) {
+  color: var(--Red, #ff5843);
+  text-decoration-line: underline;
+
+  transition: color 0.3s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--Orange, #f59829);
+    text-decoration-line: none;
+  }
+}
+
+input,
+textarea {
+  font-family: var(--Lora);
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  max-width: 100%;
+  width: 100%;
+  outline: none;
+  padding: 14px 24px;
+  border-radius: 32px;
+  border: 1px solid rgba(54, 54, 60, 0.2);
+  background: var(--White, #fff);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.15) inset;
+  position: relative;
+  height: 56px;
+
+  &::placeholder {
+    font-family: var(--Lora);
+    font-size: 16px;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: var(--Dark-mod2);
+  }
+  @media (max-width: 767px) {
+    height: 45px;
+  }
+}
+
+textarea {
+  resize: none;
+}

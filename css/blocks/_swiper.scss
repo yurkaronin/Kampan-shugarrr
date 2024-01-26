@@ -1,0 +1,23 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination {
+  transition: initial;
+  transform: initial;
+  position: initial;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  margin: 0;
+  left: initial;
+  right: initial;
+  // width: 65px;
+  // height: 65px;
+}

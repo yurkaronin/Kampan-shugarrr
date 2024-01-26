@@ -1,0 +1,37 @@
+@import "base/root";
+@import "base/fonts";
+@import "base/global";
+@import "base/support";
+
+@import "blocks/button";
+@import "blocks/radial-fill";
+@import "blocks/button-menu";
+@import "blocks/button-close";
+
+@import "blocks/title";
+@import "blocks/subtitle";
+
+@import "blocks/wrapper";
+
+@import "blocks/section";
+@import "blocks/swiper";
+@import "blocks/main";
+@import "blocks/form";
+@import "blocks/feedback";
+@import "blocks/social-list";
+@import "blocks/logotype";
+@import "blocks/navigation";
+
+@import "blocks/video";
+
+@import "sections/header";
+@import "sections/footer";
+@import "sections/hero";
+
+
+@import "pages/inner-page";
+@import "pages/simple-page";
+@import "pages/contacts-page";
+
+@import "activity/header-sticky";
+@import "activity/menu-open";
