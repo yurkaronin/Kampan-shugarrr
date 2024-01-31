@@ -1,0 +1,49 @@
+.decorate-wave-bottom {
+  position: absolute;
+  max-width: 100%;
+  width: 100vw;
+  height: 223px;
+  bottom: -35px;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  background-image: url('../img/wave/bottom.png');
+
+  @media (max-width: 1200px) {
+    height: 135px;
+    bottom: -1px;
+  }
+  @media (max-width: 1023px) {
+    height: 110px;
+  }
+  @media (max-width: 767px) {
+    height: 80px;
+  }
+}
+
+.decorate-wave-top {
+  position: absolute;
+  max-width: 100%;
+  width: 100vw;
+  top: -35px;
+  height: 223px;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  background-image: url('../img/wave/top.png');
+
+  @media (max-width: 1200px) {
+    height: 135px;
+    top: -1px;
+  }
+  @media (max-width: 1023px) {
+    height: 110px;
+  }
+  @media (max-width: 767px) {
+    height: 80px;
+  }
+}

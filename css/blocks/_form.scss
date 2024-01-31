@@ -3,10 +3,12 @@
     display: grid;
     gap: 24px 32px;
     grid-template-columns: repeat(2, 1fr);
-    &--mod {
-      grid-template-columns: repeat(1, 1fr);
-    }
+
   }
+  &__grid--mod {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   &__text {
     margin: 0;
     color: var(--Dark, #36363c);
@@ -67,14 +69,23 @@
   }
 
   @media (max-width: 1023px) {
+    &__grid--mod {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__grid--mod &__item--mod {
+      grid-column: span 2;
+    }
   }
   @media (max-width: 767px) {
     &__group {
       grid-template-columns: 1fr;
       gap: 24px;
     }
-    // &__item--mod {
-    //   grid-column: initial;
-    // }
+    &__grid--mod {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__grid--mod &__item--mod {
+      grid-column: initial;
+    }
   }
 }

@@ -21,12 +21,6 @@
   text-transform: uppercase;
   height: 56px;
 
-  &.--full {
-    max-width: 100%;
-    width: 100%;
-    justify-content: center;
-  }
-
   span {
     position: relative;
     z-index: 2;
@@ -44,24 +38,12 @@
     right: 0;
     transition: all 0.3s ease-in-out;
     pointer-events: none;
-    background-color: var(--Orange, #f59829);
     z-index: 0;
     border-radius: 32px;
+    background-color: var(--Orange, #f59829);
   }
 
-  &:hover {
-    &::before {
-      background-color: var(--Red, #ff5843);
-      left: -4px;
-      top: -4px;
-      bottom: -4px;
-      right: -4px;
-    }
-    svg path {
-      stroke: var(--Red, #ff5843);
-    }
-  }
-  .__icon {
+  &__icon {
     background-color: var(--White);
     display: flex;
     align-items: center;
@@ -72,40 +54,73 @@
     margin-right: 12px;
     pointer-events: none;
     margin-left: -8px;
+    color: var(--Orange, #f59829);
+    transition: all 0.3s;
+
     svg {
       width: 16px;
+
     }
   }
-  &.--green {
+
+  &:hover,
+  &:active,
+  &:focus {
+    &::before {
+      background-color: var(--Red, #ff5843);
+      left: -4px;
+      top: -4px;
+      bottom: -4px;
+      right: -4px;
+    }
+
+    .button__icon {
+      color: var(--Red, #ff5843);
+    }
+  }
+
+  // модификаторы
+  &--full {
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &--green {
     &::before {
       background-color: var(--DarkGreen, #007364);
     }
-    .__icon path {
-      stroke: var(--DarkGreen, #007364);
+    .button__icon {
+      color: var(--DarkGreen, #007364);
     }
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
       &::before {
         background-color: var(--Red, #ff5843);
       }
-      .__icon path {
-        stroke: var(--Red, #ff5843);
+      .button__icon {
+        color: var(--Red, #ff5843);
       }
     }
   }
 
-  &.--red {
+  &--red {
     &::before {
       background-color: var(--Red, #ff5843);
     }
-    .__icon path {
-      stroke: var(--Red, #ff5843);
+    .button__icon {
+      color: var(--Red, #ff5843);
     }
-    &:hover {
+
+    &:hover,
+    &:active,
+    &:focus {
       &::before {
         background-color: var(--Orange, #f59829);
       }
-      .__icon path {
-        stroke: var(--Orange, #f59829);
+      .button__icon {
+        color: var(--Orange, #f59829);
       }
     }
   }

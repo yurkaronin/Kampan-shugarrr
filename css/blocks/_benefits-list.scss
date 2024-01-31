@@ -1,0 +1,25 @@
+.benefits-list {
+  display: grid;
+  gap: 13px 42px;
+  grid-template-columns: repeat(2, 1fr);
+  &__name {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+    color: var(--Dark, #36363c);
+    font-family: var(--TenorSans);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 14px;
+  }
+  &__text {
+    color: var(--Dark-mod2);
+    font-family: var(--Lora);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+  }
+}

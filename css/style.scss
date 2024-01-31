@@ -1,6 +1,7 @@
 @import "base/root";
 @import "base/fonts";
 @import "base/global";
+@import "base/normalize-custom";
 @import "base/support";
 
 @import "blocks/button";
@@ -15,6 +16,10 @@
 
 @import "blocks/section";
 @import "blocks/swiper";
+@import "blocks/decorate-wave";
+@import "blocks/benefits-list";
+@import "blocks/custom-icon";
+@import "blocks/label";
 @import "blocks/main";
 @import "blocks/form";
 @import "blocks/feedback";
@@ -27,6 +32,7 @@
 @import "sections/header";
 @import "sections/footer";
 @import "sections/hero";
+@import "sections/reasons";
 
 
 @import "pages/inner-page";

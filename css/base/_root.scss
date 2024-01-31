@@ -1,18 +1,24 @@
+// Глобальные переменные проекта
 :root {
-  --Lora: 'Lora', serif;
-  --TenorSans: 'Tenor Sans', sans-serif;
-
+  --Lora: "Lora", serif;
+  --TenorSans: "Tenor Sans", sans-serif;
+  // Цвета
+  // color-white
   --White: #ffffff;
-
-  --Dark: #36363C;
+  // color-dark
+  --Dark: #36363c;
+  // color-dark-02
   --Dark-mod: rgba(54, 54, 60, 0.2);
+  // color-dark-08
   --Dark-mod2: rgba(54, 54, 60, 0.8);
-
-  --LightGreen: #F3EDD3;
-
-  --Orange: #F59829;
-  --Red: #FF5843;
+  // color-light
+  --LightGreen: #f3edd3;
+  // color-orange
+  --Orange: #f59829;
+  // color-red
+  --Red: #ff5843;
+  // color-green
   --DarkGreen: #007364;
-  --Bg: #E9E7E2;
-
+  // color-bg
+  --Bg: #e9e7e2;
 }

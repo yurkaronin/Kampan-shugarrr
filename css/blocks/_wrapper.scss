@@ -1,7 +1,7 @@
 .wrapper {
-  max-width: 1790px;
+  max-width: calc(1408px + 48px + 48px);
   width: 100%;
-  padding-inline: 60px;
+  padding-inline: 48px;
   margin-inline: auto;
 
   @media (max-width: 1600px) {
