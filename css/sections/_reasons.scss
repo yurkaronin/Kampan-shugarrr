@@ -1,8 +1,13 @@
 .reasons {
+  position: relative;
   &__grid {
     display: grid;
     gap: 32px;
     grid-template-columns: 720px 1fr;
     align-items: flex-start;
+  }
+  .benefits-composition {
+    position: absolute;
+    right: 136px;
   }
 }

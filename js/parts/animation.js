@@ -2,18 +2,18 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Функция для создания анимации клика
 function createClickAnimation(element) {
-    const tl = gsap.timeline();
+  const tl = gsap.timeline();
 
-    // Начальные стили
-    tl.to(element, { scale: 0.95, duration: 0.1, ease: 'power1.inOut' });
+  // Начальные стили
+  tl.to(element, { scale: 0.95, duration: 0.1, ease: 'power1.inOut' });
 
-    // Анимация нажатия
-    tl.to(element, { scale: 1, duration: 0.1, ease: 'power1.inOut' });
+  // Анимация нажатия
+  tl.to(element, { scale: 1, duration: 0.1, ease: 'power1.inOut' });
 
-    // Добавляем обработчик события клика
-    element.addEventListener('click', () => {
-        tl.restart(); // Запускаем анимацию при клике
-    });
+  // Добавляем обработчик события клика
+  element.addEventListener('click', () => {
+    tl.restart(); // Запускаем анимацию при клике
+  });
 }
 
 // Находим все элементы с классом .click
@@ -21,7 +21,7 @@ const clickableElements = document.querySelectorAll('.click');
 
 // Применяем анимацию к каждому элементу
 clickableElements.forEach((element) => {
-    createClickAnimation(element);
+  createClickAnimation(element);
 });
 
 
@@ -103,6 +103,43 @@ paths.forEach(path => {
   });
 });
 
+// Анимация для фоновой фигуры
+gsap.from('.benefits-composition__bg', {
+  scrollTrigger: {
+    trigger: '.benefits-composition',
+    start: 'top center', // Начать анимацию когда элемент ".benefits-composition" появится в центре экрана
+    toggleActions: 'play reverse play reverse', // Воспроизвести анимацию при входе и в обратном порядке при выходе
+  },
+  // opacity: 0,
+  duration: 1,
+  scale: 0.5
+});
+
+// Анимация для основного изображения
+gsap.from('.benefits-composition__image', {
+  scrollTrigger: {
+    trigger: '.benefits-composition__image',
+    start: 'top center',
+    toggleActions: 'play reverse play reverse',
+  },
+  // opacity: 0,
+  duration: 1,
+  x: -100 // Смещение изображения по горизонтали для создания эффекта "въезда"
+});
+
+// Анимация для зелёной ветви
+gsap.from('.benefits-composition__branch', {
+  scrollTrigger: {
+    trigger: '.benefits-composition__branch',
+    start: 'top center',
+    toggleActions: 'play reverse play reverse',
+  },
+  // opacity: 0,
+  duration: 1,
+  x: -100, // Смещение влево по горизонтали
+  transformOrigin: 'left center', // Устанавливаем точку наклона слева по центру
+  rotate: -10, // Наклон влево
+});
 
 
 

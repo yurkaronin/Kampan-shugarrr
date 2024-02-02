@@ -277,14 +277,6 @@ body {
 /**
   Приводим к единому цвету svg-элементы
  */
-svg *[fill] {
-  fill: currentColor;
-}
-
-svg *[stroke] {
-  stroke: currentColor;
-}
-
 /**
   Чиним баг задержки смены цвета при взаимодействии с svg-элементами
  */
@@ -734,61 +726,61 @@ input[type=radio].visually-hidden {
 
 .decorate-wave-bottom {
   position: absolute;
-  max-width: 100%;
   width: 100vw;
-  height: 223px;
-  bottom: -35px;
   left: 0;
   right: 0;
+  bottom: -1px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
-  background-image: url("../img/wave/bottom.png");
+  background-image: url("../img/wave/bottom.svg");
+  /* Сохранение аспектного соотношения */
+  height: 0;
+  padding-bottom: 11.6145833333vw;
 }
 @media (max-width: 1200px) {
   .decorate-wave-bottom {
-    height: 135px;
-    bottom: -1px;
+    padding-bottom: 11.25vw;
   }
 }
 @media (max-width: 1023px) {
   .decorate-wave-bottom {
-    height: 110px;
+    padding-bottom: 10.752688172vw;
   }
 }
 @media (max-width: 767px) {
   .decorate-wave-bottom {
-    height: 80px;
+    padding-bottom: 10.4302477184vw;
   }
 }
 
 .decorate-wave-top {
   position: absolute;
-  max-width: 100%;
   width: 100vw;
-  top: -35px;
-  height: 223px;
+  top: -1px;
   left: 0;
   right: 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
-  background-image: url("../img/wave/top.png");
+  background-image: url("../img/wave/top.svg");
+  /* Сохранение аспектного соотношения */
+  height: 0;
+  padding-bottom: 11.6145833333vw;
 }
 @media (max-width: 1200px) {
   .decorate-wave-top {
-    height: 135px;
-    top: -1px;
+    padding-bottom: 11.25vw;
   }
 }
 @media (max-width: 1023px) {
   .decorate-wave-top {
-    height: 110px;
+    padding-bottom: 10.752688172vw;
   }
 }
 @media (max-width: 767px) {
   .decorate-wave-top {
-    height: 80px;
+    padding-bottom: 10.4302477184vw;
   }
 }
 
@@ -816,6 +808,9 @@ input[type=radio].visually-hidden {
   font-size: 16px;
   font-weight: 400;
   margin: 0;
+}
+.benefits-list__text + .benefits-list__text {
+  margin-top: 1rem;
 }
 
 .custom-icon {
@@ -1120,6 +1115,30 @@ input[type=radio].visually-hidden {
   width: 16px;
 }
 
+.benefits-composition {
+  position: relative;
+}
+.benefits-composition__bg {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  z-index: 1;
+}
+.benefits-composition__image {
+  position: relative;
+  z-index: 2;
+  max-width: 688px;
+  width: 100%;
+  display: block;
+}
+.benefits-composition__branch {
+  position: absolute;
+  bottom: -450px;
+  left: 40px;
+  z-index: 3;
+  width: 788px;
+}
+
 .header {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -1353,11 +1372,18 @@ input[type=radio].visually-hidden {
   }
 }
 
+.reasons {
+  position: relative;
+}
 .reasons__grid {
   display: grid;
   gap: 32px;
   grid-template-columns: 720px 1fr;
   align-items: flex-start;
+}
+.reasons .benefits-composition {
+  position: absolute;
+  right: 136px;
 }
 
 .inner-page {

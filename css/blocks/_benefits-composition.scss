@@ -1,0 +1,23 @@
+.benefits-composition {
+  position: relative;
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    z-index: 1;
+  }
+  &__image {
+    position: relative;
+    z-index: 2;
+    max-width: 688px;
+    width: 100%;
+    display: block;
+  }
+  &__branch {
+    position: absolute;
+    bottom: -450px;
+    left: 40px;
+    z-index: 3;
+    width: 788px;
+  }
+}
