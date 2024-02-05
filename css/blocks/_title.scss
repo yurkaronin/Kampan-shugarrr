@@ -1,9 +1,9 @@
 .title {
   display: block;
   margin: 0;
-  padding-bottom: 42px;
+  padding-bottom: 30px;
   position: relative;
-  margin-bottom: 21px;
+  margin-bottom: 35px;
 
   color: var(--Dark, #36363c);
   // font-family: var(--TenorSans);
@@ -14,7 +14,7 @@
   &::after {
     content: "";
     display: block;
-    width: 10%;
+    width: 12%;
     height: 1px;
     position: absolute;
     left: 0;

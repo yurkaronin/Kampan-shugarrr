@@ -1,13 +1,50 @@
 .reasons {
   position: relative;
+  padding-top: 33px !important;
   &__grid {
     display: grid;
     gap: 32px;
-    grid-template-columns: 720px 1fr;
+    grid-template-columns: 685px 1fr;
     align-items: flex-start;
   }
-  .benefits-composition {
+  &__benefits {
     position: absolute;
     right: 136px;
+
+  }
+  &__benefits-list {
+    margin-bottom: 63px;
+  }
+
+  @media (max-width: 1400px) {
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 120px;
+    }
+    &__benefits {
+      position: relative;
+      right: initial;
+      max-width: max-content;
+      margin: 0 auto;
+    }
+    .reasons__grid-item {
+      order: 2;
+    }
+    .reasons__grid-item--two {
+      order: 1;
+    }
+
+    .benefits-composition__branch {
+      bottom: -187px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .benefits-composition__image {
+      max-width: 616px;
+    }
+    .benefits-composition__bg {
+      width: 842px;
+    }
   }
 }

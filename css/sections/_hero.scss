@@ -38,6 +38,7 @@
     display: grid;
     grid-template-columns: 8fr 4fr;
     gap: 32px;
+    align-items: center;
   }
 
   &__label {

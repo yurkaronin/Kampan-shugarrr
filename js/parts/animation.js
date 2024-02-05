@@ -104,42 +104,42 @@ paths.forEach(path => {
 });
 
 // Анимация для фоновой фигуры
-gsap.from('.benefits-composition__bg', {
-  scrollTrigger: {
-    trigger: '.benefits-composition',
-    start: 'top center', // Начать анимацию когда элемент ".benefits-composition" появится в центре экрана
-    toggleActions: 'play reverse play reverse', // Воспроизвести анимацию при входе и в обратном порядке при выходе
-  },
-  // opacity: 0,
-  duration: 1,
-  scale: 0.5
-});
+// gsap.from('.benefits-composition__bg', {
+//   scrollTrigger: {
+//     trigger: '.benefits-composition',
+//     start: 'top center', // Начать анимацию когда элемент ".benefits-composition" появится в центре экрана
+//     toggleActions: 'play reverse play reverse', // Воспроизвести анимацию при входе и в обратном порядке при выходе
+//   },
+//   // opacity: 0,
+//   duration: 1,
+//   scale: 0.5
+// });
 
-// Анимация для основного изображения
-gsap.from('.benefits-composition__image', {
-  scrollTrigger: {
-    trigger: '.benefits-composition__image',
-    start: 'top center',
-    toggleActions: 'play reverse play reverse',
-  },
-  // opacity: 0,
-  duration: 1,
-  x: -100 // Смещение изображения по горизонтали для создания эффекта "въезда"
-});
+// // Анимация для основного изображения
+// gsap.from('.benefits-composition__image', {
+//   scrollTrigger: {
+//     trigger: '.benefits-composition__image',
+//     start: 'top center',
+//     toggleActions: 'play reverse play reverse',
+//   },
+//   // opacity: 0,
+//   duration: 1,
+//   x: -100 // Смещение изображения по горизонтали для создания эффекта "въезда"
+// });
 
-// Анимация для зелёной ветви
-gsap.from('.benefits-composition__branch', {
-  scrollTrigger: {
-    trigger: '.benefits-composition__branch',
-    start: 'top center',
-    toggleActions: 'play reverse play reverse',
-  },
-  // opacity: 0,
-  duration: 1,
-  x: -100, // Смещение влево по горизонтали
-  transformOrigin: 'left center', // Устанавливаем точку наклона слева по центру
-  rotate: -10, // Наклон влево
-});
+// // Анимация для зелёной ветви
+// gsap.from('.benefits-composition__branch', {
+//   scrollTrigger: {
+//     trigger: '.benefits-composition__branch',
+//     start: 'top center',
+//     toggleActions: 'play reverse play reverse',
+//   },
+//   // opacity: 0,
+//   duration: 1,
+//   x: -100, // Смещение влево по горизонтали
+//   transformOrigin: 'left center', // Устанавливаем точку наклона слева по центру
+//   rotate: -10, // Наклон влево
+// });
 
 
 
