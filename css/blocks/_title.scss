@@ -34,12 +34,16 @@
   }
 
   @media (max-width: 1023px) {
-    font-size: 64px;
+    font-size: 40px;
   }
 
   @media (max-width: 767px) {
-    font-size: 35px;
+    font-size: 30px;
     padding-bottom: 21px;
     padding-right: 0;
+    margin-bottom: 26px;
+    &::after {
+      width: 26%;
+    }
   }
 }

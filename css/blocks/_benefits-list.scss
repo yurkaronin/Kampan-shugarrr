@@ -25,4 +25,19 @@
       margin-top: 1rem;
     }
   }
+  @media (max-width: 1400px) {
+    gap: 35px 42px;
+    &__name {
+      max-width: 200px;
+    }
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr);
+    &__name {
+      gap: 16px;
+      grid-template-columns: 60px 1fr;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+  }
 }

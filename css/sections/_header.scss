@@ -47,8 +47,8 @@
     }
   }
   @media (max-width: 1023px) {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 43px;
+    padding-bottom: 43px;
     &__grid {
       gap: 29px;
       grid-template-columns: auto 1fr;
@@ -59,6 +59,7 @@
       }
     }
   }
+
   @media (max-width: 767px) {
     padding-top: 20px;
     padding-bottom: 20px;

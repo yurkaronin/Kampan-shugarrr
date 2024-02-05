@@ -10,4 +10,8 @@
   letter-spacing: 0.14px;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 0;
+  }
 }

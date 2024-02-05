@@ -1,4 +1,4 @@
-.text-and-button{
+.text-and-button {
   display: grid;
   gap: 32px;
   grid-template-columns: 210px auto;
@@ -26,5 +26,9 @@
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
     gap: 8px;
+    text-align: center;
+    .button {
+      margin: 0 auto;
+    }
   }
 }

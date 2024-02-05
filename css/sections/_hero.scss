@@ -103,17 +103,30 @@
 
   @media (max-width: 1200px) {
     padding-top: 152px;
-    padding-bottom: 110px;
+    padding-bottom: 50px !important;
     min-height: 768px;
     &__grid {
       grid-template-columns: 7fr 5fr;
     }
+    &__label {
+      margin-bottom: 25px;
+    }
+    &__title {
+      font-size: 48px;
+    }
+    &__buttons {
+      gap: 24px;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 445px;
+    }
+    &__label span {
+      font-size: 44px;
+    }
   }
   @media (max-width: 1023px) {
     padding-top: 160px;
-    padding-bottom: 104px;
-    min-height:  initial;
-
+    min-height: initial;
+    padding-bottom: 115px !important;
     &__grid {
       grid-template-columns: 1fr;
       gap: 48px;
@@ -122,12 +135,31 @@
       font-size: 40px;
       margin-bottom: 27px;
     }
+    &__label {
+      padding: 20px 40px 18px;
+    }
+    &__title {
+      margin-bottom: 16px;
+    }
+    &__text {
+      margin-bottom: 25px;
+    }
+    &__buttons {
+      grid-template-columns: repeat(2, auto);
+      max-width: max-content;
+    }
   }
 
   @media (max-width: 767px) {
+    position: relative;
+    overflow: visible;
+    z-index: 10;
     padding-top: 105px;
     padding-bottom: 155px;
     min-height: 670px;
+    &__grid {
+      gap: 30px;
+    }
     &__label {
       padding: 12px 30px 10px;
       margin-bottom: 13px;
@@ -153,6 +185,9 @@
       max-width: 100%;
       width: 100%;
       justify-content: center;
+    }
+    &__feedback {
+      position: absolute;
     }
   }
 }
