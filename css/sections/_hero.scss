@@ -127,6 +127,7 @@
     padding-top: 160px;
     min-height: initial;
     padding-bottom: 115px !important;
+    min-height: 1024px;
     &__grid {
       grid-template-columns: 1fr;
       gap: 48px;
