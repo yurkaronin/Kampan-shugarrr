@@ -25,13 +25,16 @@
     .button-close {
       position: absolute;
       top: -24px;
-      right: 48px;
+      right: 90px;
     }
     .title {
       margin-bottom: 21px;
   }
   .subtitle {
     font-size: 20px;
+  }
+  .wrapper {
+    position: relative;
   }
 }
 
@@ -43,6 +46,13 @@
   border-radius: 40px;
   background: #fff;
   position: relative;
+
+  // overflow: auto;
+  // overflow: hidden;
+}
+
+.content-scroll {
+  max-height: 80vh;
 }
 
 .to-right {
@@ -86,3 +96,5 @@
     }
   }
 }
+
+

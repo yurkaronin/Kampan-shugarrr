@@ -7,7 +7,7 @@
   <title>Кампан</title>
 
   <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
-  <link rel="stylesheet" href="./libs/simplebar.min.js">
+  <link rel="stylesheet" href="./libs/simplebar.css">
   <link rel="stylesheet" href="./css/main.min.css">
 
 </head>
@@ -2039,176 +2039,161 @@
     </div>
   </footer>
 
-  <!-- скрипт яндекс карт ВАЖНО проставить тут персональный ключ пользователя -->
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=1dba075a-a65a-4b22-84a2-ebb26f26fe43&lang=ru_RU"
-    type="text/javascript"></script>
-  <!-- GSAP  -->
-  <script src="./libs/gsap.min.js"></script>
-  <script src="./libs/ScrollTrigger.min.js"></script>
-  <!-- скрипты -->
-  <script src="./libs/fslightbox.min.js"></script>
-  <script src="./libs/swiper-bundle.min.js"></script>
-
-  <script src="./js/parts/animation.js"></script>
-  <script src="./js/parts/map.js"></script>
-  <script src="./js/parts/sliders.js"></script>
-  <script src="./js/parts/modals.js"></script>
-  <script src="./js/main.js"></script>
-
-
   <!-- подробнее "мы Ищем партнеров" -->
   <section class="modal active" id="modal-looking-partners">
     <div class="wrapper">
       <div class="modal__body">
-        <span class="label">мы Ищем партнеров</span>
-        <h2 class="title"><span>ООО "КАМПАН"</span> открыт для предложений логистических услуг</h2>
-        <p class="invite-to-cooperate__text">ООО "КАМПАН" открыт для предложений логистических услуг. Заинтересованы в
-          заключении договоров перевозки для своевременной и качественной доставки Товара точно в срок и по минимальным
-          ценам.</p>
-        <p class="subtitle">Нам нужен <span>тентованный транспорт от 5 до 20 тонн</span></p>
-        <p class="subtitle">Мы работаем:</p>
+        <div class="content-scroll" data-simplebar>
+          <span class="label">мы Ищем партнеров</span>
+          <h2 class="title"><span>ООО "КАМПАН"</span> открыт для предложений логистических услуг</h2>
+          <p class="invite-to-cooperate__text">ООО "КАМПАН" открыт для предложений логистических услуг. Заинтересованы в
+            заключении договоров перевозки для своевременной и качественной доставки Товара точно в срок и по
+            минимальным
+            ценам.</p>
+          <p class="subtitle">Нам нужен <span>тентованный транспорт от 5 до 20 тонн</span></p>
+          <p class="subtitle">Мы работаем:</p>
 
-        <ul class="partners-list">
+          <ul class="partners-list">
 
-          <li class="partners-list__item icon-parent">
-            <div class="group-icon group-icon--mod-3">
-              <svg class="group-icon__content">
-                <use href="./svg/icons-sprite.svg#driver"></use>
-              </svg>
-              <div class="group-icon__bg">
-                <svg>
-                  <use href="./svg/icons-sprite.svg#simple-round"></use>
+            <li class="partners-list__item icon-parent">
+              <div class="group-icon group-icon--mod-3">
+                <svg class="group-icon__content">
+                  <use href="./svg/icons-sprite.svg#driver"></use>
                 </svg>
+                <div class="group-icon__bg">
+                  <svg>
+                    <use href="./svg/icons-sprite.svg#simple-round"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-            <p class="text">C собственниками автотранспорта (частными предпринимателями)</p>
-          </li>
+              <p class="text">C собственниками автотранспорта (частными предпринимателями)</p>
+            </li>
 
-          <li class="partners-list__item icon-parent">
-            <div class="group-icon group-icon--mod-3">
-              <svg class="group-icon__content">
-                <use href="./svg/icons-sprite.svg#car-garage"></use>
-              </svg>
-              <div class="group-icon__bg">
-                <svg>
-                  <use href="./svg/icons-sprite.svg#simple-round"></use>
+            <li class="partners-list__item icon-parent">
+              <div class="group-icon group-icon--mod-3">
+                <svg class="group-icon__content">
+                  <use href="./svg/icons-sprite.svg#car-garage"></use>
                 </svg>
+                <div class="group-icon__bg">
+                  <svg>
+                    <use href="./svg/icons-sprite.svg#simple-round"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-            <p class="text">C автотранспортными предприятиями</p>
-          </li>
+              <p class="text">C автотранспортными предприятиями</p>
+            </li>
 
-          <li class="partners-list__item icon-parent">
-            <div class="group-icon group-icon--mod-3">
-              <svg class="group-icon__content">
-                <use href="./svg/icons-sprite.svg#car-group"></use>
-              </svg>
-              <div class="group-icon__bg">
-                <svg>
-                  <use href="./svg/icons-sprite.svg#simple-round"></use>
+            <li class="partners-list__item icon-parent">
+              <div class="group-icon group-icon--mod-3">
+                <svg class="group-icon__content">
+                  <use href="./svg/icons-sprite.svg#car-group"></use>
                 </svg>
+                <div class="group-icon__bg">
+                  <svg>
+                    <use href="./svg/icons-sprite.svg#simple-round"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-            <p class="text">C транспортно-экспедиционными компаниями</p>
-          </li>
-        </ul>
+              <p class="text">C транспортно-экспедиционными компаниями</p>
+            </li>
+          </ul>
 
-        <p class="subtitle">Важные критерии:</p>
+          <p class="subtitle">Важные критерии:</p>
 
-        <ul class="partners-list">
+          <ul class="partners-list">
 
-          <li class="partners-list__item icon-parent">
-            <div class="group-icon group-icon--mod-4">
-              <svg class="group-icon__content">
-                <use href="./svg/icons-sprite.svg#car-time"></use>
-              </svg>
-              <div class="group-icon__bg">
-                <svg>
-                  <use href="./svg/icons-sprite.svg#figure-1"></use>
+            <li class="partners-list__item icon-parent">
+              <div class="group-icon group-icon--mod-4">
+                <svg class="group-icon__content">
+                  <use href="./svg/icons-sprite.svg#car-time"></use>
                 </svg>
+                <div class="group-icon__bg">
+                  <svg>
+                    <use href="./svg/icons-sprite.svg#figure-1"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-            <p class="text">Своевременная доставка груза в полном объеме </p>
-          </li>
+              <p class="text">Своевременная доставка груза в полном объеме </p>
+            </li>
 
-          <li class="partners-list__item icon-parent">
-            <div class="group-icon group-icon--mod-4">
-              <svg class="group-icon__content">
-                <use href="./svg/icons-sprite.svg#road-to-mark"></use>
-              </svg>
-              <div class="group-icon__bg">
-                <svg>
-                  <use href="./svg/icons-sprite.svg#figure-2"></use>
+            <li class="partners-list__item icon-parent">
+              <div class="group-icon group-icon--mod-4">
+                <svg class="group-icon__content">
+                  <use href="./svg/icons-sprite.svg#road-to-mark"></use>
                 </svg>
+                <div class="group-icon__bg">
+                  <svg>
+                    <use href="./svg/icons-sprite.svg#figure-2"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-            <p class="text">Полный отчет о нахождении груза по маршруту </p>
-          </li>
+              <p class="text">Полный отчет о нахождении груза по маршруту </p>
+            </li>
 
-          <li class="partners-list__item icon-parent">
-            <div class="group-icon group-icon--mod-4">
-              <svg class="group-icon__content">
-                <use href="./svg/icons-sprite.svg#car-checked"></use>
-              </svg>
-              <div class="group-icon__bg">
-                <svg>
-                  <use href="./svg/icons-sprite.svg#figure-3"></use>
+            <li class="partners-list__item icon-parent">
+              <div class="group-icon group-icon--mod-4">
+                <svg class="group-icon__content">
+                  <use href="./svg/icons-sprite.svg#car-checked"></use>
                 </svg>
+                <div class="group-icon__bg">
+                  <svg>
+                    <use href="./svg/icons-sprite.svg#figure-3"></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-            <p class="text">Гарантированная подача транспортных средств под погрузку</p>
-          </li>
-        </ul>
+              <p class="text">Гарантированная подача транспортных средств под погрузку</p>
+            </li>
+          </ul>
 
-        <p class="subtitle">Что мы предлагаем:</p>
+          <p class="subtitle">Что мы предлагаем:</p>
 
-        <ol class="offer-list">
-          <li class="offer-list__item">
-            <div class="group-icon group-icon--mod-5">
-              <div class="group-icon__bg">
-                <svg>
-                  <use href="./svg/icons-sprite.svg#circle-wavy"></use>
-                </svg>
-                <span class="group-icon__label">01.</span>
+          <ol class="offer-list">
+            <li class="offer-list__item">
+              <div class="group-icon group-icon--mod-5">
+                <div class="group-icon__bg">
+                  <svg>
+                    <use href="./svg/icons-sprite.svg#circle-wavy"></use>
+                  </svg>
+                  <span class="group-icon__label">01.</span>
+                </div>
               </div>
-            </div>
-            <p class="text">Взаимовыгодные условия сотрудничества</p>
-          </li>
-          <li class="offer-list__item">
-            <div class="group-icon group-icon--mod-5">
-              <div class="group-icon__bg">
-                <svg>
-                  <use href="./svg/icons-sprite.svg#circle-wavy"></use>
-                </svg>
-                <span class="group-icon__label">02.</span>
+              <p class="text">Взаимовыгодные условия сотрудничества</p>
+            </li>
+            <li class="offer-list__item">
+              <div class="group-icon group-icon--mod-5">
+                <div class="group-icon__bg">
+                  <svg>
+                    <use href="./svg/icons-sprite.svg#circle-wavy"></use>
+                  </svg>
+                  <span class="group-icon__label">02.</span>
+                </div>
               </div>
-            </div>
-            <p class="text">Перевозки по ЮФО</p>
-          </li>
-          <li class="offer-list__item">
-            <div class="group-icon group-icon--mod-5">
-              <div class="group-icon__bg">
-                <svg>
-                  <use href="./svg/icons-sprite.svg#circle-wavy"></use>
-                </svg>
-                <span class="group-icon__label">03.</span>
+              <p class="text">Перевозки по ЮФО</p>
+            </li>
+            <li class="offer-list__item">
+              <div class="group-icon group-icon--mod-5">
+                <div class="group-icon__bg">
+                  <svg>
+                    <use href="./svg/icons-sprite.svg#circle-wavy"></use>
+                  </svg>
+                  <span class="group-icon__label">03.</span>
+                </div>
               </div>
-            </div>
-            <p class="text">Примерный объем перевозок 60-70 тыс.тонн в год.</p>
-          </li>
-          <li class="offer-list__item">
-            <div class="group-icon group-icon--mod-5">
-              <div class="group-icon__bg">
-                <svg>
-                  <use href="./svg/icons-sprite.svg#circle-wavy"></use>
-                </svg>
-                <span class="group-icon__label">04.</span>
+              <p class="text">Примерный объем перевозок 60-70 тыс.тонн в год.</p>
+            </li>
+            <li class="offer-list__item">
+              <div class="group-icon group-icon--mod-5">
+                <div class="group-icon__bg">
+                  <svg>
+                    <use href="./svg/icons-sprite.svg#circle-wavy"></use>
+                  </svg>
+                  <span class="group-icon__label">04.</span>
+                </div>
               </div>
-            </div>
-            <p class="text">Своевременная оплата согласно договора и предоставленных документов.</p>
-          </li>
-        </ol>
-
+              <p class="text">Своевременная оплата согласно договора и предоставленных документов.</p>
+            </li>
+          </ol>
+        </div>
         <!-- Кнопка закрытия окна  -->
         <button class="button-close click js-close-modal" type="button">
           <span class="button-close__icon">
@@ -2304,6 +2289,45 @@
       </div>
     </div>
   </section>
+
+
+
+
+  <!-- скрипт яндекс карт ВАЖНО проставить тут персональный ключ пользователя -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=1dba075a-a65a-4b22-84a2-ebb26f26fe43&lang=ru_RU"
+    type="text/javascript"></script>
+  <!-- GSAP  -->
+  <script src="./libs/gsap.min.js"></script>
+  <script src="./libs/ScrollTrigger.min.js"></script>
+  <!-- скрипты -->
+  <script src="./libs/fslightbox.min.js"></script>
+  <script src="./libs/swiper-bundle.min.js"></script>
+  <script src="./libs/simplebar.min.js"></script>
+
+
+  <script src="./js/parts/animation.js"></script>
+  <script src="./js/parts/map.js"></script>
+  <script src="./js/parts/sliders.js"></script>
+  <script src="./js/parts/modals.js"></script>
+  <script src="./js/main.js"></script>
+  <noscript>
+    <style>
+      /**
+      * Reinstate scrolling for non-JS clients
+      */
+      .simplebar-content-wrapper {
+        scrollbar-width: auto;
+        -ms-overflow-style: auto;
+      }
+
+      .simplebar-content-wrapper::-webkit-scrollbar,
+      .simplebar-hide-scrollbar::-webkit-scrollbar {
+        display: initial;
+        width: initial;
+        height: initial;
+      }
+    </style>
+  </noscript>
 
 </body>
 

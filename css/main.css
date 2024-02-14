@@ -1751,6 +1751,15 @@ input:active, input:focus {
   grid-template-columns: auto 1fr;
 }
 
+.simplebar-scrollbar:before {
+  background-color: var(--color-orange);
+  opacity: 1;
+}
+
+.simplebar-track.simplebar-vertical {
+  right: -25px;
+}
+
 .button-menu {
   position: relative;
   display: flex;
@@ -2584,13 +2593,16 @@ input:active, input:focus {
 .modal .button-close {
   position: absolute;
   top: -24px;
-  right: 48px;
+  right: 90px;
 }
 .modal .title {
   margin-bottom: 21px;
 }
 .modal .subtitle {
   font-size: 20px;
+}
+.modal .wrapper {
+  position: relative;
 }
 
 .modal__body {
@@ -2601,6 +2613,10 @@ input:active, input:focus {
   border-radius: 40px;
   background: #fff;
   position: relative;
+}
+
+.content-scroll {
+  max-height: 80vh;
 }
 
 .to-right {
@@ -2879,4 +2895,8 @@ input[type=radio].visually-hidden {
 }
 .icon-parent.active .group-icon--mod-4 .group-icon__bg {
   color: var(--color-red) !important;
+}
+
+.modal-open {
+  overflow: hidden;
 }

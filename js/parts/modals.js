@@ -6,12 +6,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById(modalId);
     if (modal) {
       modal.classList.add('active');
+      document.body.classList.add('modal-open');
     }
   }
 
   // Функция для скрытия модального окна
   function hideModal(modal) {
     modal.classList.remove('active');
+    document.body.classList.remove('modal-open');
   }
 
   // Обработчик кликов по ссылкам для открытия модальных окон
