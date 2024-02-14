@@ -1,0 +1,5 @@
+.hidden-tablet {
+  @include tablet-s {
+    display: none !important;
+  }
+}

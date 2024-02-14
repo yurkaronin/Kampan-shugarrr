@@ -1,0 +1,230 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+html *,
+html *::before,
+html *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 375px;
+  font-size: 16px;
+  font-family: var(--first-family);
+  position: relative;
+  overflow-x: hidden;
+  background-color: var(--color-bg);
+  color: var(--color-dark);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.16px;
+  min-height: 100%;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+input,
+textarea,
+a,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-style: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--second-family);
+  color: var(--color-dark);
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: 400;
+}
+
+a:not([class]) {
+  color: var(--color-red);
+  text-decoration-line: underline;
+
+  transition: color 0.3s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--color-orange);
+    text-decoration-line: none;
+  }
+}
+
+input,
+textarea {
+  font-family: var(--first-family);
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  max-width: 100%;
+  width: 100%;
+  outline: none;
+  padding: 14px 24px;
+  border-radius: 32px;
+  border: 1px solid rgba(54, 54, 60, 0.2);
+  background: var(--color-white);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.15) inset;
+  position: relative;
+  height: 56px;
+
+  &::placeholder {
+    font-family: var(--first-family);
+    font-size: 16px;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: var(--color-dark-mod-08);
+  }
+  @media (max-width: 767px) {
+    height: 45px;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+/**
+  Убираем внутренние отступы слева тегам списков,
+  у которых есть атрибут class
+ */
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+/**
+  Убираем внешние отступы body и двум другим тегам,
+  у которых есть атрибут class
+ */
+body,
+:where(blockquote, figure):where([class]) {
+  margin: 0;
+}
+
+/**
+  Убираем внешние отступы вертикали нужным тегам,
+  у которых есть атрибут class
+ */
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
+  margin-block: 0;
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+:where(fieldset[class]) {
+  margin-left: 0;
+  padding: 0;
+  border: none;
+}
+
+/**
+  Убираем стандартный маркер маркированному списку,
+  у которого есть атрибут class
+ */
+:where(ul[class]) {
+  list-style: none;
+}
+
+/**
+  Внешний отступ вниз для параграфа без атрибута class,
+  который расположен не последним среди своих соседних элементов
+ */
+p:where(:not([class]):not(:last-child)) {
+  margin-bottom: var(--paragraphMarginBottom);
+}
+
+/**
+  Наследуем свойства шрифт для полей ввода
+ */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+/**
+  Чиним баг задержки смены цвета при взаимодействии с svg-элементами
+ */
+svg * {
+  transition-property: fill, stroke;
+}
+
+/**
+  Удаляем все анимации и переходы для людей,
+  которые предпочитают их не использовать
+ */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+ol,
+ul {
+  &:not([class]) {
+    padding-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    li {
+      list-style: none;
+      padding-left: 26px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      &::before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 2px;
+        background-color: var(--color-red);
+        position: absolute;
+        left: 0;
+        top: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.group-icon {
+  position: relative;
+  width: 88px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-green);
+  transition: color 0.3s;
+  &__bg {
+    color: var(--color-white);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    svg {
+      transition: all 0.3s ease-in-out;
+      pointer-events: none;
+      width: 88px;
+      height: 88px;
+    }
+  }
+  &__content {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    z-index: 5;
+    svg {
+      transition: all 0.3s;
+    }
+  }
+  &:hover {
+    color: var(--color-white) !important;
+    .group-icon__bg {
+      color: var(--color-orange) !important;
+      svg {
+        scale: 1.2;
+      }
+    }
+  }
+  &--mod {
+    width: 64px;
+    height: 64px;
+
+    .group-icon__bg svg {
+      width: 64px;
+      height: 64px;
+    }
+    .group-icon__content {
+      color: var(--color-orange);
+
+    }
+    &:hover {
+      .group-icon__content {
+        color: var(--color-white);
+      }
+    }
+  }
+
+  &--mod-2 {
+    width: 64px;
+    height: 64px;
+
+    .group-icon__bg {
+      color: var(--color-red);
+      svg {
+        width: 64px;
+        height: 64px;
+      }
+    }
+    .group-icon__content {
+      color: var(--color-white);
+
+    }
+    // &:hover {
+    //   .group-icon__content {
+    //     color: var(--color-white);
+    //   }
+    // }
+  }
+}

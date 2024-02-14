@@ -1,0 +1,156 @@
+.composition {
+  position: relative;
+  &__bg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+  &__image {
+    position: relative;
+    z-index: 5;
+    display: block;
+
+  }
+  &__branch {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+  }
+
+
+}
+
+#composition-1 {
+  transform: translateX(120px);
+  .composition__bg {
+    top: 0;
+    left: -70px;
+  }
+  .composition__image {
+    max-width: 688px;
+
+  }
+  .composition__branch {
+    bottom: -440px;
+    left: 50px;
+    width: 900px;
+    top: auto;
+    z-index: 11;
+  }
+
+  @media (max-width: 1400px) {
+    .composition__image {
+      max-width: 673px;
+    }
+    .composition__branch {
+      bottom: -204px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .composition__image {
+      max-width: 616px;
+    }
+    .composition__bg {
+      width: 590px;
+      top: -35px;
+      left: -35px;
+    }
+    .composition__branch {
+      bottom: -190px;
+      left: 90px;
+      width: 880px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .composition__image {
+      max-width: 300px;
+      margin-left: 33px;
+    }
+    .composition__bg {
+      width: 411px;
+    }
+    .composition__branch {
+      left: 60px;
+      width: 490px;
+    }
+  }
+}
+
+#composition-2 {
+  transform: translateX(-65px);
+  .composition__bg {
+    width: 808px;
+    left: -90px;
+    top: -30px;
+  }
+  .composition__image {
+    max-width: 633px;
+  }
+  .composition__branch {
+    width: 650px;
+    top: -423px;
+    bottom: auto;
+    right: 1px;
+    left: auto;
+  }
+}
+
+#composition-3 {
+  transform: translateX(120px);
+  .composition__bg {
+    width: 688px;
+    height: 504px;
+    top: -40px;
+    left: -80px;
+  }
+  .composition__image {
+    max-width: 688px;
+  }
+  .composition__branch {
+    width: 448px;
+    height: 460px;
+    top: -290px;
+    bottom: auto;
+    right: -120px;
+    left: auto;
+  }
+}
+
+#composition-4 {
+  transform: translateX(-120px);
+
+  .composition__bg {
+    top: 184px;
+    left: 120px;
+  }
+}
+
+#composition-5 {
+  transform: translate(115px, -150px);
+  .composition__bg {
+    top: -45px;
+    left: -75px;
+  }
+  .composition__branch {
+    left: auto;
+    right: -185px;
+    top: 140px;
+  }
+}
+
+#composition-6 {
+  transform: translate(-250px, 20px);
+  margin-bottom: -80px;
+  .composition__bg {
+    left: 200px;
+    top: -20px;
+  }
+  .composition__branch {
+    top: -120px;
+    left: -250px;
+}
+}

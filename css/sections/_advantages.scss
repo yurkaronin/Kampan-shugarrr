@@ -1,0 +1,28 @@
+.advantages {
+  &__list {
+    display: grid;
+    gap: 55px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  &__list-item {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr auto;
+
+    &:nth-child(2n) {
+      grid-template-columns: auto 1fr;
+      .advantages__list-icon {
+        order: 2;
+      }
+    }
+  }
+  &__feedback {
+    max-width: 448px;
+    margin-left: auto;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 7px;
+  }
+}

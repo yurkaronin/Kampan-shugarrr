@@ -1,0 +1,68 @@
+.benefits-list {
+  display: grid;
+  gap: 13px 42px;
+  grid-template-columns: repeat(2, 1fr);
+  &__name {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    color: var(--color-dark, #36363c);
+    font-family: var(--second-family);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 14px;
+  }
+  &__text {
+    font-family: var(--first-family);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    color: var(--color-dark-mod-08);
+
+    .__mod {
+      font-size: 14px;
+      color: var(--color-dark);
+      margin-top: 1em;
+
+    }
+
+  }
+  sup {
+    color: var(--color-red);
+  }
+
+  @media (max-width: 1400px) {
+    gap: 35px 42px;
+    &__name {
+      max-width: 200px;
+    }
+  }
+
+  @include tablet-s-rew {
+    grid-template-columns: repeat(1, 1fr);
+    &__name {
+      gap: 16px;
+      grid-template-columns: 60px 1fr;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+  }
+  @media (max-width: 1400px) {
+    gap: 35px 42px;
+    &__name {
+      max-width: 200px;
+    }
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr);
+    &__name {
+      gap: 16px;
+      grid-template-columns: 60px 1fr;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+  }
+}

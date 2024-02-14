@@ -1,0 +1,23 @@
+.phone-block {
+  margin: 0;
+  text-align: right;
+  font-size: 13px;
+  max-width: 220px;
+  color: var(--color-white);
+
+  &__number {
+    display: block;
+    font-family: var(--second-family);
+    font-size: 24px;
+    transition: color 0.3s;
+    &:hover {
+      color: var(--color-orange);
+    }
+  }
+
+  @include desktop-rew {
+    &__number {
+      font-size: 20px;
+    }
+  }
+}

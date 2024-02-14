@@ -1,0 +1,66 @@
+// base
+@import "./base/mixins",
+"./base/normalize",
+"./base/fonts",
+"./base/root",
+"./base/media",
+"./base/global",
+"./base/support";
+
+// blocks
+@import
+"./blocks/wrapper",
+"./blocks/button",
+"./blocks/social-icons",
+"./blocks/phone-block",
+"./blocks/section",
+"./blocks/title",
+"./blocks/subtitle",
+"./blocks/download-link",
+"./blocks/wave",
+"./blocks/feedback",
+"./blocks/form",
+"./blocks/label",
+"./blocks/composition",
+"./blocks/benefits-list",
+"./blocks/text-and-button",
+"./blocks/custom-icon",
+"./blocks/delivery-list",
+"./blocks/map",
+"./blocks/group-icon",
+"./blocks/decorate-element",
+"./blocks/custom-sticky",
+"./blocks/button-menu";
+
+// sections
+@import
+"./sections/header",
+"./sections/main",
+"./sections/first-screen",
+"./sections/navigation",
+"./sections/delivery-methods",
+"./sections/about",
+"./sections/advantages",
+"./sections/how-we-work",
+"./sections/invite-to-cooperate",
+"./sections/contacts",
+"./sections/documents",
+"./sections/team",
+"./sections/reasons",
+"./sections/footer";
+
+// utils
+@import
+"./utils/hidden-tablet",
+"./utils/visible-tablet",
+
+"./utils/hidden-mobile",
+"./utils/visible-mobile",
+
+"./utils/visually-hidden";
+// pages
+
+// activity
+@import
+"./activity/header-sticky",
+"./activity/menu-open";

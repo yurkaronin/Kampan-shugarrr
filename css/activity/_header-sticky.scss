@@ -1,0 +1,32 @@
+.header-sticky {
+  .header {
+    background-color: var(--color-green);
+    color: var(--color-white);
+  }
+  .header__flex {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .header__company-name {
+    font-size: 32px;
+  }
+  .header__logo-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  @include tablet-rew {
+    .header__company-name {
+      font-size: 30px;
+    }
+  }
+  @include tablet-s-rew {
+    .header__flex {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .header__company-name {
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.wave {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  background-image: url('../img/wave/wave-pearl.svg');
+  &--misty {
+    background-image: url('../img/wave/wave-misty.svg');
+  }
+  &--white {
+    background-image: url('../img/wave/wave-white.svg');
+  }
+  &--silver {
+    background-image: url('../img/wave/wave-silver.svg');
+  }
+  /* Сохранение аспектного соотношения */
+  height: 0;
+  padding-bottom: calc(223px / 1920px * 100vw);
+
+  @media (max-width: 1200px) {
+    padding-bottom: calc(135px / 1200px * 100vw);
+  }
+  @media (max-width: 1023px) {
+    padding-bottom: calc(110px / 1023px * 100vw);
+  }
+  @media (max-width: 767px) {
+    padding-bottom: calc(80px / 767px * 100vw);
+  }
+}

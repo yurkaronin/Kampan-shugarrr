@@ -1,0 +1,45 @@
+@import "base/root";
+@import "base/fonts";
+@import "base/global";
+@import "base/normalize-custom";
+@import "base/support";
+
+@import "blocks/button";
+@import "blocks/radial-fill";
+@import "blocks/button-menu";
+@import "blocks/button-close";
+
+@import "blocks/title";
+@import "blocks/subtitle";
+
+@import "blocks/wrapper";
+
+@import "blocks/section";
+@import "blocks/swiper";
+@import "blocks/decorate-wave";
+@import "blocks/benefits-list";
+@import "blocks/custom-icon";
+@import "blocks/label";
+@import "blocks/main";
+@import "blocks/form";
+@import "blocks/feedback";
+@import "blocks/social-list";
+@import "blocks/logotype";
+@import "blocks/navigation";
+@import "blocks/benefits-composition";
+@import "blocks/text-and-button";
+
+@import "blocks/video";
+
+@import "sections/header";
+@import "sections/footer";
+@import "sections/hero";
+@import "sections/reasons";
+
+
+@import "pages/inner-page";
+@import "pages/simple-page";
+@import "pages/contacts-page";
+
+@import "activity/header-sticky";
+@import "activity/menu-open";

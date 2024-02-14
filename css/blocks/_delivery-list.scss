@@ -1,0 +1,32 @@
+.delivery-list {
+  margin-bottom: 70px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+
+  &__grid {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: auto 1fr;
+  }
+  &__image {
+    display: block;
+    width: 88px;
+    height: 88px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 6px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color-dark);
+  }
+  &__description {
+    margin: 0;
+    font-size: 16px;
+  }
+}

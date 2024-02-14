@@ -1,0 +1,21 @@
+.delivery-methods {
+  background-color: var(--color-beige);
+  padding-bottom: 325px;
+
+  .section__item-right {
+    position: relative;
+    z-index: 2;
+  }
+
+  .section__grid {
+    align-items: center;
+  }
+
+  @include desktop-s-rew {
+    padding-bottom: 185px;
+  }
+
+  @include tablet-s-rew {
+    padding-bottom: 145px;
+  }
+}

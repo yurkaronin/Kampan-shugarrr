@@ -1,0 +1,137 @@
+.button {
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  outline: 0;
+  z-index: 2;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 32px 1fr;
+  align-items: center;
+  max-width: max-content;
+  border: none;
+  background-color: transparent;
+  padding: 10px 24px;
+  font-family: var(--first-family);
+  font-style: normal;
+  line-height: 1;
+  color: var(--color-white);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.14px;
+  text-transform: uppercase;
+  height: 56px;
+
+  span {
+    position: relative;
+    z-index: 2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+    z-index: 0;
+    border-radius: 32px;
+    background-color: var(--color-orange);
+  }
+
+  &__icon {
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: all 0.3s;
+    flex-shrink: 0;
+<<<<<<< HEAD
+    color: var(--color-orange);
+=======
+>>>>>>> 6f3b163395a3dbfc3ce3ac053d5fcacd2ecada92
+
+    svg {
+      flex-shrink: 0;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+    }
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    &::before {
+      background-color: var(--color-red);
+      left: -4px;
+      top: -4px;
+      bottom: -4px;
+      right: -4px;
+    }
+
+    .button__icon {
+      color: var(--color-red);
+    }
+  }
+
+  // модификаторы
+  &--full {
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: 32px auto;
+  }
+
+  &--green {
+    &::before {
+      background-color: var(--color-green);
+    }
+    .button__icon {
+      color: var(--color-green);
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      &::before {
+        background-color: var(--color-red);
+      }
+      .button__icon {
+        color: var(--color-red);
+      }
+    }
+  }
+
+  &--red {
+    &::before {
+      background-color: var(--color-red);
+    }
+    .button__icon {
+      color: var(--color-red);
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      &::before {
+        background-color: var(--color-orange);
+      }
+      .button__icon {
+        color: var(--color-orange);
+      }
+    }
+  }
+
+  @include tablet-s-rew {
+    height: 45px;
+    padding: 6px 19px;
+    grid-template-columns: 32px auto;
+  }
+}

@@ -1,0 +1,65 @@
+.how-we-work {
+  background-color: var(--color-beige);
+  &__steps-list {
+    display: grid;
+    gap: 40px 32px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__item {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: auto 1fr;
+    align-items: flex-start;
+
+    a {
+      color: var(--color-green);
+    }
+    &:hover .how-we-work__image {
+      img {
+        scale: 1.2;
+      }
+      span {
+        background-color: var(--color-green);
+        scale: 1.2;
+        color: var(--color-white);
+      }
+    }
+  }
+  &__image {
+    position: relative;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-green);
+    width: 88px;
+    height: 88px;
+    img {
+      display: block;
+      border-radius: 50%;
+      max-width: 100%;
+      object-fit: cover;
+      transition: all 0.3s;
+    }
+    span {
+      position: absolute;
+      z-index: 2;
+      top: 8px;
+      right: -16px;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-white);
+      transition: all 0.3s;
+    }
+
+  }
+  &__text {
+    padding-top: 15px;
+  }
+
+}
