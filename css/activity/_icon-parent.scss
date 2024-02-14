@@ -8,9 +8,16 @@
       scale: 1.2;
     }
   }
+
   .group-icon--mod {
     .group-icon__content {
-      color: var(--color-white);
+      color: var(--color-white) !important;
+    }
+  }
+
+  .group-icon--mod-4 {
+    .group-icon__bg {
+      color: var(--color-red) !important;
     }
   }
 

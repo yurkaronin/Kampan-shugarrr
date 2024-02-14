@@ -7,6 +7,7 @@
   <title>Кампан</title>
 
   <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./libs/simplebar.min.js">
   <link rel="stylesheet" href="./css/main.min.css">
 
 </head>
@@ -729,7 +730,7 @@
               <span class="label">мы ищем партнеров</span>
               <h3 class="text-and-button__title"><span>ООО «Кампан»</span> открыт для предложений логистических услуг
               </h3>
-              <a href="#" class="button button--green">
+              <a href="#" class="button button--green" data-target="modal-request">
                 <span class="button__icon">
                   <svg>
                     <use href="./svg/icons-sprite.svg#arrow"></use>
@@ -2051,14 +2052,258 @@
   <script src="./js/parts/animation.js"></script>
   <script src="./js/parts/map.js"></script>
   <script src="./js/parts/sliders.js"></script>
+  <script src="./js/parts/modals.js"></script>
   <script src="./js/main.js"></script>
 
 
   <!-- подробнее "мы Ищем партнеров" -->
+  <section class="modal active" id="modal-looking-partners">
+    <div class="wrapper">
+      <div class="modal__body">
+        <span class="label">мы Ищем партнеров</span>
+        <h2 class="title"><span>ООО "КАМПАН"</span> открыт для предложений логистических услуг</h2>
+        <p class="invite-to-cooperate__text">ООО "КАМПАН" открыт для предложений логистических услуг. Заинтересованы в
+          заключении договоров перевозки для своевременной и качественной доставки Товара точно в срок и по минимальным
+          ценам.</p>
+        <p class="subtitle">Нам нужен <span>тентованный транспорт от 5 до 20 тонн</span></p>
+        <p class="subtitle">Мы работаем:</p>
+
+        <ul class="partners-list">
+
+          <li class="partners-list__item icon-parent">
+            <div class="group-icon group-icon--mod-3">
+              <svg class="group-icon__content">
+                <use href="./svg/icons-sprite.svg#driver"></use>
+              </svg>
+              <div class="group-icon__bg">
+                <svg>
+                  <use href="./svg/icons-sprite.svg#simple-round"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="text">C собственниками автотранспорта (частными предпринимателями)</p>
+          </li>
+
+          <li class="partners-list__item icon-parent">
+            <div class="group-icon group-icon--mod-3">
+              <svg class="group-icon__content">
+                <use href="./svg/icons-sprite.svg#car-garage"></use>
+              </svg>
+              <div class="group-icon__bg">
+                <svg>
+                  <use href="./svg/icons-sprite.svg#simple-round"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="text">C автотранспортными предприятиями</p>
+          </li>
+
+          <li class="partners-list__item icon-parent">
+            <div class="group-icon group-icon--mod-3">
+              <svg class="group-icon__content">
+                <use href="./svg/icons-sprite.svg#car-group"></use>
+              </svg>
+              <div class="group-icon__bg">
+                <svg>
+                  <use href="./svg/icons-sprite.svg#simple-round"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="text">C транспортно-экспедиционными компаниями</p>
+          </li>
+        </ul>
+
+        <p class="subtitle">Важные критерии:</p>
+
+        <ul class="partners-list">
+
+          <li class="partners-list__item icon-parent">
+            <div class="group-icon group-icon--mod-4">
+              <svg class="group-icon__content">
+                <use href="./svg/icons-sprite.svg#car-time"></use>
+              </svg>
+              <div class="group-icon__bg">
+                <svg>
+                  <use href="./svg/icons-sprite.svg#figure-1"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="text">Своевременная доставка груза в полном объеме </p>
+          </li>
+
+          <li class="partners-list__item icon-parent">
+            <div class="group-icon group-icon--mod-4">
+              <svg class="group-icon__content">
+                <use href="./svg/icons-sprite.svg#road-to-mark"></use>
+              </svg>
+              <div class="group-icon__bg">
+                <svg>
+                  <use href="./svg/icons-sprite.svg#figure-2"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="text">Полный отчет о нахождении груза по маршруту </p>
+          </li>
+
+          <li class="partners-list__item icon-parent">
+            <div class="group-icon group-icon--mod-4">
+              <svg class="group-icon__content">
+                <use href="./svg/icons-sprite.svg#car-checked"></use>
+              </svg>
+              <div class="group-icon__bg">
+                <svg>
+                  <use href="./svg/icons-sprite.svg#figure-3"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="text">Гарантированная подача транспортных средств под погрузку</p>
+          </li>
+        </ul>
+
+        <p class="subtitle">Что мы предлагаем:</p>
+
+        <ol class="offer-list">
+          <li class="offer-list__item">
+            <div class="group-icon group-icon--mod-5">
+              <div class="group-icon__bg">
+                <svg>
+                  <use href="./svg/icons-sprite.svg#circle-wavy"></use>
+                </svg>
+                <span class="group-icon__label">01.</span>
+              </div>
+            </div>
+            <p class="text">Взаимовыгодные условия сотрудничества</p>
+          </li>
+          <li class="offer-list__item">
+            <div class="group-icon group-icon--mod-5">
+              <div class="group-icon__bg">
+                <svg>
+                  <use href="./svg/icons-sprite.svg#circle-wavy"></use>
+                </svg>
+                <span class="group-icon__label">02.</span>
+              </div>
+            </div>
+            <p class="text">Перевозки по ЮФО</p>
+          </li>
+          <li class="offer-list__item">
+            <div class="group-icon group-icon--mod-5">
+              <div class="group-icon__bg">
+                <svg>
+                  <use href="./svg/icons-sprite.svg#circle-wavy"></use>
+                </svg>
+                <span class="group-icon__label">03.</span>
+              </div>
+            </div>
+            <p class="text">Примерный объем перевозок 60-70 тыс.тонн в год.</p>
+          </li>
+          <li class="offer-list__item">
+            <div class="group-icon group-icon--mod-5">
+              <div class="group-icon__bg">
+                <svg>
+                  <use href="./svg/icons-sprite.svg#circle-wavy"></use>
+                </svg>
+                <span class="group-icon__label">04.</span>
+              </div>
+            </div>
+            <p class="text">Своевременная оплата согласно договора и предоставленных документов.</p>
+          </li>
+        </ol>
+
+        <!-- Кнопка закрытия окна  -->
+        <button class="button-close click js-close-modal" type="button">
+          <span class="button-close__icon">
+            <svg>
+              <use href="./svg/icons-sprite.svg#cross"></use>
+            </svg>
+
+          </span>
+        </button>
+
+      </div>
+    </div>
+  </section>
 
   <!-- Запрос информации -->
+  <section class="modal" id="modal-request">
+    <div class="wrapper">
+      <div class="modal__body">
+
+        <h2 class="title">Запрос информации</h2>
+        <p class="invite-to-cooperate__text">Заполните простую форму и наши специалисты свяжутся с Вами в ближайшее
+          время</p>
+
+        <form class="form" action="" method="post">
+          <div class="form__grid">
+
+            <div class="form__item icon icon--company">
+              <input type="text" name="" id="user-company" placeholder="Компания">
+            </div>
+
+            <div class="form__item icon icon--phone">
+              <input type="tel" name="" id="user-phone" placeholder="Телефон">
+            </div>
+
+            <div class="form__item icon icon--mail">
+              <input type="email" name="" id="user-email" placeholder="E-mail">
+            </div>
+
+            <div class="form__item">
+              <button class="button button--full" type="submit">
+                <span class="button__icon">
+                  <svg>
+                    <use href="./svg/icons-sprite.svg#arrow"></use>
+                  </svg>
+                </span>
+                <span>запросить информацию</span>
+              </button>
+            </div>
+
+            <div class="form__item form__item--2">
+              <p class="form__text">Нажимая на кнопку заказать я соглашаюсь на <a href="#">обработку
+                  персональных
+                  данных
+                  <sup>*</sup></a></p>
+            </div>
+
+          </div>
+        </form>
+
+        <!-- Кнопка закрытия окна  -->
+        <button class="button-close click js-close-modal" type="button">
+          <span class="button-close__icon">
+            <svg>
+              <use href="./svg/icons-sprite.svg#cross"></use>
+            </svg>
+
+          </span>
+        </button>
+
+      </div>
+    </div>
+  </section>
 
   <!--уведомление  Запрос отправлен  -->
+  <section class="modal" id="modal-sending-message">
+    <div class="wrapper">
+      <div class="modal__body">
+
+        <h2 class="title">Запрос отправлен</h2>
+        <p class="invite-to-cooperate__text">Спасибо за Ваше обращение наши специалисты свяжутся с Вами в ближайшее
+          время</p>
+
+        <!-- Кнопка закрытия окна  -->
+        <button class="button-close click js-close-modal" type="button">
+          <span class="button-close__icon">
+            <svg>
+              <use href="./svg/icons-sprite.svg#cross"></use>
+            </svg>
+
+          </span>
+        </button>
+
+      </div>
+    </div>
+  </section>
 
 </body>
 

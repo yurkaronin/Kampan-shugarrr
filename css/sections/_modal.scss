@@ -1,0 +1,88 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.73);
+  z-index: 9999;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+
+    .form__item:has(.button) {
+      margin-top: 0;
+    }
+
+    .button-close {
+      position: absolute;
+      top: -24px;
+      right: 48px;
+    }
+    .title {
+      margin-bottom: 21px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+}
+
+.modal__body {
+  max-width: 768px;
+  padding: 27px 40px 35px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 40px;
+  background: #fff;
+  position: relative;
+}
+
+.to-right {
+  max-width: max-content;
+  margin-left: auto;
+}
+
+
+
+.modal.active {
+  pointer-events: initial;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .modal {
+    &__title {
+      font-size: 35px;
+    }
+    &__text {
+      margin-bottom: 23px;
+    }
+    .form__group {
+      grid-template-columns: 1fr;
+    }
+    .form__item--mod {
+      grid-column: initial;
+    }
+    .capcha {
+      max-width: max-content;
+      margin-inline: auto;
+      margin-bottom: 16px;
+    }
+    .form__footer {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    &__body {
+      padding: 26px 32px 32px;
+    }
+  }
+}

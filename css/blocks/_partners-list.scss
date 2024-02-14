@@ -1,0 +1,10 @@
+.partners-list {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 30px;
+
+  .group-icon {
+    margin-bottom: 14px;
+  }
+}

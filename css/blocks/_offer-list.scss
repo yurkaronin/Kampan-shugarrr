@@ -1,0 +1,10 @@
+.offer-list {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(1, 1fr);
+  &__item {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: auto 1fr;
+  }
+}

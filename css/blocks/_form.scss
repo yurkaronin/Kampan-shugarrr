@@ -70,6 +70,10 @@
     }
   }
 
+  .form__item--2 {
+    grid-column: span 2;
+  }
+
   @media (max-width: 1200px) {
     &__grid--mod {
       gap: 16px;

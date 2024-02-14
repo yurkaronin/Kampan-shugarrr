@@ -368,8 +368,6 @@
       d="M30.419.734a2.071 2.071 0 0 1 3.162 0l.044.05c.723.856 1.995.982 2.871.284l.053-.042a2.071 2.071 0 0 1 3.102.617l.032.059a2.071 2.071 0 0 0 2.762.837l.059-.03a2.071 2.071 0 0 1 2.922 1.21l.02.064a2.071 2.071 0 0 0 2.545 1.36l.065-.018a2.071 2.071 0 0 1 2.63 1.757l.007.066a2.071 2.071 0 0 0 2.23 1.83l.067-.005a2.071 2.071 0 0 1 2.237 2.237l-.006.066a2.071 2.071 0 0 0 1.83 2.231l.067.008a2.071 2.071 0 0 1 1.758 2.63l-.019.064a2.071 2.071 0 0 0 1.36 2.544l.064.02a2.071 2.071 0 0 1 1.21 2.923l-.03.06a2.07 2.07 0 0 0 .837 2.76l.059.033c1.12.62 1.415 2.1.617 3.102l-.042.053a2.071 2.071 0 0 0 .283 2.871l.051.044a2.071 2.071 0 0 1 0 3.162l-.05.044a2.071 2.071 0 0 0-.284 2.871l.042.053a2.071 2.071 0 0 1-.617 3.102l-.059.032a2.07 2.07 0 0 0-.837 2.762l.03.059a2.071 2.071 0 0 1-1.21 2.922l-.064.02a2.071 2.071 0 0 0-1.36 2.545l.019.065a2.071 2.071 0 0 1-1.758 2.63l-.066.007a2.071 2.071 0 0 0-1.83 2.23l.005.067a2.071 2.071 0 0 1-2.237 2.237l-.066-.006a2.071 2.071 0 0 0-2.231 1.83l-.008.067a2.071 2.071 0 0 1-2.63 1.758l-.064-.019a2.071 2.071 0 0 0-2.544 1.36l-.02.064a2.071 2.071 0 0 1-2.923 1.21l-.06-.03a2.07 2.07 0 0 0-2.76.837l-.033.059a2.071 2.071 0 0 1-3.102.617l-.053-.042a2.071 2.071 0 0 0-2.871.283l-.044.051a2.071 2.071 0 0 1-3.163 0l-.043-.05a2.071 2.071 0 0 0-2.871-.284l-.053.042a2.071 2.071 0 0 1-3.102-.617l-.032-.059a2.07 2.07 0 0 0-2.762-.837l-.059.03a2.071 2.071 0 0 1-2.922-1.21l-.02-.064a2.071 2.071 0 0 0-2.545-1.36l-.065.019a2.071 2.071 0 0 1-2.63-1.758l-.007-.066a2.071 2.071 0 0 0-2.23-1.83l-.067.005a2.071 2.071 0 0 1-2.237-2.237l.006-.066a2.071 2.071 0 0 0-1.83-2.231l-.067-.008a2.071 2.071 0 0 1-1.757-2.63l.018-.064a2.071 2.071 0 0 0-1.36-2.544l-.064-.02a2.071 2.071 0 0 1-1.21-2.923l.03-.06a2.071 2.071 0 0 0-.837-2.76l-.059-.033a2.071 2.071 0 0 1-.617-3.102l.042-.053a2.071 2.071 0 0 0-.283-2.871l-.051-.044a2.071 2.071 0 0 1 0-3.163l.05-.043c.856-.723.982-1.995.284-2.871l-.042-.053a2.071 2.071 0 0 1 .617-3.102l.059-.032a2.071 2.071 0 0 0 .837-2.762l-.03-.059a2.071 2.071 0 0 1 1.21-2.922l.064-.02a2.071 2.071 0 0 0 1.36-2.545l-.018-.065a2.071 2.071 0 0 1 1.757-2.63l.066-.007a2.071 2.071 0 0 0 1.83-2.23l-.005-.067a2.071 2.071 0 0 1 2.237-2.237l.066.006a2.071 2.071 0 0 0 2.231-1.83l.008-.067a2.071 2.071 0 0 1 2.63-1.757l.064.018a2.071 2.071 0 0 0 2.544-1.36l.02-.064a2.071 2.071 0 0 1 2.923-1.21l.06.03a2.071 2.071 0 0 0 2.76-.837l.033-.059a2.071 2.071 0 0 1 3.102-.617l.053.042a2.071 2.071 0 0 0 2.871-.283l.044-.051Z" />
   </symbol>
 
-
-  <!-- иконки в блоке с контактами  -->
   <!-- контакты геометка  -->
   <symbol id="contacts-address" viewBox="0 0 24 25" fill="none">
     <path fill="#fff" stroke="#F59829" stroke-miterlimit="10" stroke-width="2"
@@ -388,7 +386,7 @@
     <path fill="#fff" stroke="#F59829" stroke-miterlimit="10" stroke-width="2"
       d="M8.902 17.098c5.608 5.608 10.964 6.794 12.94 6.902 1.265-1.851 1.798-3.38 2.158-4.745-1.366-1.33-3.354-2.687-5.177-3.45l-2.157 2.156c-.736-.198-2.759-1.034-5.176-3.451-2.417-2.418-3.253-4.44-3.45-5.176l2.156-2.157C9.432 5.354 8.076 3.367 6.745 2 5.379 2.36 3.85 2.893 2 4.157c.108 1.977 1.294 7.333 6.902 12.941Z" />
   </symbol>
-
+  <!-- лого веригуд  -->
   <symbol id="verygood" viewBox="0 0 38 38" fill="none">
     <g clip-path="url(#a)">
       <path fill="#fff"
@@ -400,5 +398,106 @@
       </clipPath>
     </defs>
   </symbol>
+
+  <!-- крестик  -->
+  <symbol id="cross" viewBox="0 0 16 16" fill="none">
+    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m1 1 14 14M15 1 1 15" />
+  </symbol>
+
+  <!-- иконки для модалок  -->
+  <!-- водитель авто  -->
+  <symbol id="driver" viewBox="0 0 48 48" fill="none">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+      d="M1.001 7V1h30v24h-5" />
+    <path stroke="currentColor" stroke-miterlimit="10" stroke-width="2"
+      d="M40.001 28a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM31.001 25h6" />
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+      d="M43.001 25h4v-2.836c0-1.163-.212-2.13-1-3.224-.298-.413-2.741-2.782-3.855-3.52-1.547-2.75-1.874-3.232-3.145-5.419M34.001 10h5c-.9-1.755-4.5-6.026-6.397-6h-1.603M34.001 13.606l1 2.833 4.583.5" />
+    <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+      d="M9.001 17c2.29 0 4-1.918 4-4.285v-1.43c0-2.366-1.71-4.285-4-4.285s-4 1.919-4 4.285v1.43c0 2.367 1.71 4.285 4 4.285Z" />
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+      d="m8.857 33.503-3.231-.658c-.951-.134-1.596-.347-2.483-1.688l-.854-1.883C1.536 27.619 1 26.909 1 25.563 1 22.744 2.441 20 5.619 20h5.764c1.848.075 2.982.398 3.991 1.615s1.955 2.364 1.955 2.364" />
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+      d="m5.738 25.285.904 2.26c.361.902.797 1.256 1.639 1.567l2.328.827M19.544 32h-3.53c-.191-2.375 1.876-4 1.876-4h3.172c.698 0 1.15.782.839 1.447l-.68 1.447c-.317.678-.967 1.106-1.677 1.106Z" />
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+      d="m20.589 28 1.315-2.692c.3-.61-.137-1.329-.807-1.329h-7.004a.901.901 0 0 0-.807.508l-4.511 9.184c-.3.61.136 1.329.807 1.329h7.005a.9.9 0 0 0 .807-.508L18.618 32M5.001 32.724V37M15.001 35v2" />
+  </symbol>
+
+  <!-- простой круг  -->
+  <symbol id="simple-round" viewBox="0 0 88 88" fill="none">
+    <circle cx="44" cy="44" r="44" fill="currentColor" />
+  </symbol>
+  <!-- машина у гаража  -->
+  <symbol id="car-garage" viewBox="0 0 48 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9 22H31" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+      stroke-linejoin="round" />
+    <path d="M16 28H9" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+      stroke-linejoin="round" />
+    <path d="M1 34H13.5" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+      stroke-linejoin="round" />
+    <path d="M9 34V16H31V23" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+      stroke-linejoin="round" />
+    <path d="M3 34V12L20 1L37 12V23" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+      stroke-linejoin="round" />
+    <path
+      d="M22 46C23.6569 46 25 44.6569 25 43C25 41.3431 23.6569 40 22 40C20.3431 40 19 41.3431 19 43C19 44.6569 20.3431 46 22 46Z"
+      stroke="white" stroke-width="2" stroke-miterlimit="10" />
+    <path d="M27 43H25" stroke="white" stroke-width="2" stroke-miterlimit="10" />
+    <path
+      d="M19 43H16V36.732C16 36.523 16.038 36.315 16.112 36.121L18.788 30.112C19.006 29.542 19.508 29.146 20.091 29.085L27 28.361"
+      stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+    <path
+      d="M40 46C41.6569 46 43 44.6569 43 43C43 41.3431 41.6569 40 40 40C38.3431 40 37 41.3431 37 43C37 44.6569 38.3431 46 40 46Z"
+      stroke="white" stroke-width="2" stroke-miterlimit="10" />
+    <path d="M37 43H27V26H47V43H43" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+      stroke-linejoin="round" />
+    <path d="M20 35.802L23.284 35.25L24 32.311" stroke="white" stroke-width="2" stroke-miterlimit="10"
+      stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
+  <!-- три машины  -->
+  <symbol id="car-group" viewBox="0 0 48 37" fill="none">
+    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+      d="M5 11V8h27v5M42 26h1v-6.268c0-.209-.038-.417-.112-.611l-2.677-7.009a1.582 1.582 0 0 0-1.302-1.027L32 10.361M9 4V1h27v5" />
+    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+      d="M46 19h1v-6.268c0-.209-.038-.417-.112-.611l-2.677-7.009a1.582 1.582 0 0 0-1.302-1.027L36 3.361" />
+    <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+      d="M33 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM8 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+      d="M5 33H1V14.891h27V33H11" />
+    <path stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M28 33h2" />
+    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+      d="M36 33h3v-6.268c0-.209-.038-.417-.112-.611l-2.677-7.009a1.582 1.582 0 0 0-1.302-1.027L28 17.361" />
+    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+      d="m35.698 25.281-3.762-.633-.82-3.367" />
+  </symbol>
+  <!-- машина и часы  -->
+  <symbol id="car-time" viewBox="0 0 47 46" fill="none">
+    <path stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M31 45a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM26 42h2" />
+    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+      d="M34 42h3v-6.268c0-.209-.038-.417-.112-.611l-2.677-7.009a1.582 1.582 0 0 0-1.302-1.027L26 26.361" />
+    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+      d="m33.698 34.281-3.762-.633-.821-3.367M16.074 20.501A15.193 15.193 0 0 1 16 19c0-8.284 6.716-15 15-15 8.284 0 15 6.716 15 15 0 4.934-2.382 9.312-6.06 12.046" />
+    <path stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M8 45a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+      d="M11 42h15V24H1v18h4M31 4V1M29 1h4M31 8v11M20.394 8.394 18.5 6.5M41.606 8.394 43.5 6.5" />
+  </symbol>
+  <!-- дорога  -->
+  <symbol id="road-to-mark" viewBox="0 0 41 47" fill="none">
+    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+      d="M8 46c-9-3.15-6.534-7.802-1-10 5.882-2.336 10.143-3.098 13.47-4.833C24.061 29.292 22 27 19 26M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" />
+    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+      d="M1 11C1 5.477 5.477 1 11 1s10 4.477 10 10c0 8.419-8 10.581-10 19C9 21.581 1 19.419 1 11ZM26.4 26c4.819 2.254 7.11 4.491 2.704 8.066-3.5 2.838-5.521 4.31-4.938 6.278.69 2.329 5.625 4.34 15.833 5.656" />
+  </symbol>
+  <!-- проверенная машина  -->
+  <symbol id="car-checked" viewBox="0 0 48 33" fill="none">
+    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+      d="M1 9V1h30v24h-5" />
+    <path stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M40 28a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM31 25h6" />
+    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+      d="M43 25h4v-2.836c0-1.163-.212-2.13-1-3.224-.298-.413-2.741-2.782-3.855-3.52-1.547-2.75-1.875-3.232-3.145-5.419M34 10h5c-.9-1.755-4.5-6.026-6.397-6H31M34 13.606l1 2.833 4.583.5" />
+    <path stroke="#fff" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+      d="m23.1 11-13 13.125-5.2-5.25L1 22.812 10.1 32 27 14.937 23.1 11Z" />
+  </symbol>
+
 
 </svg>
