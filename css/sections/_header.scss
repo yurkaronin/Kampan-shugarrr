@@ -6,16 +6,6 @@
   z-index: 999;
   transition: all 0.4s;
 
-<<<<<<< HEAD
-=======
-  &__grid {
-    display: grid;
-    gap: 32px;
-    grid-template-columns: auto 1fr;
-    position: relative;
-    z-index: 999;
-  }
->>>>>>> 6f3b163395a3dbfc3ce3ac053d5fcacd2ecada92
   &__flex {
     display: flex;
     align-items: center;
@@ -59,7 +49,6 @@
   &__phone {
     margin-inline: 16px;
   }
-<<<<<<< HEAD
   &__social-icons {
 
   }
@@ -68,35 +57,6 @@
   }
 
   @include tablet-rew {
-=======
-  @media (max-width: 1023px) {
-    padding-top: 43px;
-    padding-bottom: 43px;
-    &__grid {
-      gap: 29px;
-      grid-template-columns: auto 1fr;
-    }
-    &__contacts {
-      a {
-        font-size: 20px;
-      }
-    }
-  }
-
-  @media (max-width: 767px) {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    &__grid {
-      gap: 29px;
-      // grid-template-columns: 1fr auto;
-    }
-    &__contacts {
-      display: none;
-    }
-    &__social {
-      display: none;
-    }
->>>>>>> 6f3b163395a3dbfc3ce3ac053d5fcacd2ecada92
     &__flex {
       padding-top: 48px;
       padding-bottom: 48px;

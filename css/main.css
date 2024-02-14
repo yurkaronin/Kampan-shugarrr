@@ -1243,6 +1243,25 @@ input:active, input:focus {
     margin-bottom: 4px;
   }
 }
+@media (max-width: 1400px) {
+  .benefits-list {
+    gap: 35px 42px;
+  }
+  .benefits-list__name {
+    max-width: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .benefits-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .benefits-list__name {
+    gap: 16px;
+    grid-template-columns: 60px 1fr;
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+}
 
 .text-and-button__grid {
   display: grid;
@@ -2290,6 +2309,61 @@ input:active, input:focus {
 .reasons .benefits-list {
   margin-bottom: 63px;
   gap: 42px;
+}
+.reasons__benefits-list {
+  margin-bottom: 63px;
+}
+@media (max-width: 1400px) {
+  .reasons {
+    padding-top: 80px !important;
+  }
+  .reasons__grid {
+    grid-template-columns: 1fr;
+    gap: 190px;
+  }
+  .reasons__benefits {
+    position: relative;
+    right: initial;
+    max-width: max-content;
+    margin: 0 auto;
+    margin-right: 10%;
+  }
+  .reasons .reasons__grid-item {
+    order: 2;
+    position: relative;
+    z-index: 2;
+  }
+  .reasons .reasons__grid-item--two {
+    order: 1;
+  }
+  .reasons__benefits-list {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 1023px) {
+  .reasons__benefits {
+    margin-right: auto;
+  }
+  .reasons__grid {
+    gap: 170px;
+  }
+  .reasons__benefits-list {
+    margin-bottom: 62px;
+  }
+}
+@media (max-width: 767px) {
+  .reasons {
+    padding-top: 420px !important;
+  }
+  .reasons__grid {
+    gap: 88px;
+  }
+  .reasons__benefits {
+    max-width: 100%;
+  }
+  .reasons__benefits-list {
+    margin-bottom: 25px;
+  }
 }
 
 .footer {

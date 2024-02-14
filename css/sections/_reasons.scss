@@ -1,26 +1,9 @@
 .reasons {
-<<<<<<< HEAD
   max-width: 100%;
   overflow: hidden;
   .benefits-list {
     margin-bottom: 63px;
     gap: 42px;
-=======
-  position: relative;
-  padding-top: 33px !important;
-  max-width: 100%;
-  overflow: hidden;
-  z-index: 1;
-  &__grid {
-    display: grid;
-    gap: 32px;
-    grid-template-columns: 685px 1fr;
-    align-items: flex-start;
-  }
-  &__benefits {
-    position: absolute;
-    right: 136px;
->>>>>>> 6f3b163395a3dbfc3ce3ac053d5fcacd2ecada92
   }
   &__benefits-list {
     margin-bottom: 63px;
