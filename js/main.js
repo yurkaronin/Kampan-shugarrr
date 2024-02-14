@@ -95,6 +95,28 @@ document.addEventListener('DOMContentLoaded', function () {
   // КОНЕЦ Кнопки с эффектом радиальной заливки
 
 
+  // делаем простые статичные элементы интерактивными
+  // Находим все элементы с классом .icon-parent
+const iconParents = document.querySelectorAll('.icon-parent');
+
+// Функция для добавления класса .active
+function addActiveClass(event) {
+  event.currentTarget.classList.add('active');
+}
+
+// Функция для удаления класса .active
+function removeActiveClass(event) {
+  event.currentTarget.classList.remove('active');
+}
+
+// Добавляем обработчики событий для каждого элемента
+iconParents.forEach((iconParent) => {
+  iconParent.addEventListener('mouseover', addActiveClass);
+  iconParent.addEventListener('mouseout', removeActiveClass);
+});
+
+
+
 });
 
 // техническая часть - УДАЛИТЬ НА ПРОДАКШЕНЕ!

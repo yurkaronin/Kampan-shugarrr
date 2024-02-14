@@ -16,6 +16,7 @@
     object-fit: cover;
     border-radius: 50%;
     overflow: hidden;
+    transition: all 0.3s;
   }
   &__title {
     margin: 0;
@@ -28,5 +29,12 @@
   &__description {
     margin: 0;
     font-size: 16px;
+  }
+  &__item {
+    &:hover {
+      .delivery-list__image {
+        scale: 1.2;
+      }
+    }
   }
 }

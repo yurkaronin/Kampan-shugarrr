@@ -31,6 +31,8 @@
 "./blocks/group-icon",
 "./blocks/decorate-element",
 "./blocks/custom-sticky",
+"./blocks/team",
+"./blocks/swiper-button",
 "./blocks/button-menu";
 
 // sections
@@ -46,7 +48,6 @@
 "./sections/invite-to-cooperate",
 "./sections/contacts",
 "./sections/documents",
-"./sections/team",
 "./sections/reasons",
 "./sections/footer";
 
@@ -64,4 +65,5 @@
 // activity
 @import
 "./activity/header-sticky",
-"./activity/menu-open";
+"./activity/menu-open",
+"./activity/icon-parent";

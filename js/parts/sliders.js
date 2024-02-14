@@ -1,7 +1,7 @@
 
-if (document.querySelector('.team .mySwiper')) {
+if (document.querySelector('.team .swiper')) {
 
-  var swiperTeam = new Swiper(".team .mySwiper", {
+  var swiperTeam = new Swiper(".team .swiper", {
     slidesPerView: 6,
     spaceBetween: 32,
     // freeMode: true,

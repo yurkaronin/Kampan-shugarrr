@@ -69,7 +69,43 @@
     align-items: center;
   }
   a {
-    color: var(--DarkGreen);
+    color: var(--color-green);
+  }
+  &__logo {
+    transition: all 0.3s;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      transition: all 0.3s ease-in-out;
+      pointer-events: none;
+      z-index: 0;
+      border-radius: 50%;
+      background-color: var(--color-orange);
+    }
+    svg {
+      width: 32px;
+      pointer-events: none;
+      position: absolute;
+    }
+    &:hover {
+      &::before {
+        background-color: var(--color-red);
+        left: -4px;
+        top: -4px;
+        bottom: -4px;
+        right: -4px;
+      }
+    }
   }
   @media (max-width: 767px) {
     text-align: left;
@@ -99,7 +135,7 @@
     font-size: 14px;
     letter-spacing: 0.01em;
     text-transform: uppercase;
-    color: var(--DarkGreen);
+    color: var(--color-green);
   }
 
   @media (max-width: 767px) {

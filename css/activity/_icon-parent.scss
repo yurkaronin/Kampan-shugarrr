@@ -1,0 +1,17 @@
+.icon-parent.active {
+  .group-icon {
+    color: var(--color-white) !important;
+  }
+  .group-icon__bg {
+    color: var(--color-orange) !important;
+    svg {
+      scale: 1.2;
+    }
+  }
+  .group-icon--mod {
+    .group-icon__content {
+      color: var(--color-white);
+    }
+  }
+
+}

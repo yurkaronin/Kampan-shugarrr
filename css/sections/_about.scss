@@ -37,6 +37,7 @@
     max-width: 328px;
     width: 100%;
     margin-bottom: 30px;
+    transition: all 0.3s;
   }
   .section__grid {
     margin-bottom: 80px;
@@ -49,6 +50,14 @@
   }
   p:first-of-type {
     margin-top: 0;
+  }
+
+  &__details-item {
+    &:hover {
+      .about__details-image {
+        scale: 1.1;
+      }
+    }
   }
 }
 
