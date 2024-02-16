@@ -5,6 +5,7 @@
   right: 0;
   top: -265px;
   pointer-events: none;
+  overflow: hidden;
   svg {
     width: 100%;
   }
@@ -15,4 +16,27 @@
   height: 1226px;
   top: -295px;
   right: -140px;
+}
+
+@media (max-width: 1500px) {
+//   .decorate-element {
+//     width: 780px;
+//     height: 1100px;
+//     top: -265px;
+//     right: -160px;
+// }
+// .decorate-element-2 {
+  // position: absolute;
+  // display: block;
+  // width: 864px;
+  // height: 800px;
+  // top: -295px;
+  // right: 0;
+  // background-repeat: no-repeat;
+  // background-image: url("../svg/decorative-element-2.svg");
+  // background-size: contain;
+  // background-position: 94px;
+
+
+// }
 }

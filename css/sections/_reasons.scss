@@ -9,7 +9,7 @@
     margin-bottom: 63px;
   }
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1500px) {
     padding-top: 80px !important;
     &__grid {
       grid-template-columns: 1fr;
@@ -27,9 +27,8 @@
       position: relative;
       z-index: 2;
     }
-    .reasons__grid-item--two {
+    .section__item-left {
       order: 1;
-
     }
     &__benefits-list {
       margin-bottom: 50px;

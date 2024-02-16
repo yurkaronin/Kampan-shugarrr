@@ -12,13 +12,38 @@
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(2, 1fr);
-    position: relative;
+    // position: relative;
     z-index: 2;
   }
+  &__item-left,
+  &__item-right {
 
-  @include desktop-rew {
+    &:has(:not(.composition)) {
+      position: relative;
+      z-index: 2;
+    }
+    &:has(.composition) {
+      z-index: 0;
+      position: initial;
+    }
+  }
+
+
+  @media (max-width: 1500px) {
     &__grid {
       grid-template-columns: repeat(1, 1fr);
+      gap: 120px;
+    }
+    &__grid--mod {
+      grid-template-columns: repeat(12, 1fr);
+      gap: 32px;
+
+      .section__item-left {
+        grid-column: span 7;
+      }
+      .section__item-right {
+        grid-column: span 5;
+      }
     }
   }
 }

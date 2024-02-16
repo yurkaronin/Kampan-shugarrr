@@ -9,4 +9,14 @@
     margin-bottom: -145px;
   }
 
+  @media (max-width: 1500px) {
+    .section__item-left {
+      order: 2;
+    }
+    .section__item-right {
+      order: 1;
+      margin-bottom: 0;
+    }
+  }
+
 }

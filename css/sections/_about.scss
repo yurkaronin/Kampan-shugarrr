@@ -59,6 +59,15 @@
       }
     }
   }
+
+  @media (max-width: 1500px) {
+    .section__item-right {
+      order: 1;
+    }
+    .section__item-left {
+      order: 2;
+    }
+  }
 }
 
 

@@ -6,8 +6,20 @@
     gap: 32px;
     grid-template-columns: repeat(3, 1fr);
   }
+  &__item {
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
   .section__item-right {
     position: relative;
     z-index: 20;
+  }
+
+  @media (max-width: 1500px) {
+    .composition {
+      max-width: 100%;
+    }
   }
 }
