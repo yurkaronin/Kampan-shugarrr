@@ -828,7 +828,7 @@
         <div class="text-and-button">
           <div class="text-and-button__grid">
             <span class="text-and-button__text">Заполните простую форму и получите скидку от 5000 руб.</span>
-            <a href="#" class="button button--red">
+            <a href="#" class="button button--red" data-target="modal-request">
               <span class="button__icon">
                 <svg>
                   <use href="./svg/icons-sprite.svg#arrow"></use>
@@ -1665,128 +1665,6 @@
         <h2 class="title">Сотрудники</h2>
       </div>
 
-      <div class="team">
-
-        <div class="wrapper">
-          <div class="swiper">
-
-            <div class="swiper-wrapper">
-
-              <div class="swiper-slide">
-                <div class="team__card">
-                  <div class="team__photo">
-                    <img src="./img/team/1.png" alt="фото" loading="lazy" width="208">
-                  </div>
-                  <div class="team__card-details">
-                    <span class="team__name">Юрий Владимирович</span>
-                    <span class="team__specialization">Заместитель директора</span>
-                    <a href="tel:+79184744711" class="team__phone">+7 (918) 474-47-11</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="team__card">
-                  <div class="team__photo">
-                    <img src="./img/team/2.png" alt="фото" loading="lazy" width="208">
-                  </div>
-                  <div class="team__card-details">
-                    <span class="team__name">Нина Эмильевна</span>
-                    <span class="team__specialization">Начальник коммерческого отдела</span>
-                    <a href="tel:+78612583615" class="team__phone">+7 (861) 258-36-15</a>
-                    <a href="tel:+79184475510" class="team__phone">+7 (918) 447-55-10</a>
-
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="team__card">
-                  <div class="team__photo">
-                    <img src="./img/team/2.png" alt="фото" loading="lazy" width="208">
-                  </div>
-                  <div class="team__card-details">
-                    <span class="team__name">Нина Эмильевна</span>
-                    <span class="team__specialization">Начальник коммерческого отдела</span>
-                    <a href="tel:+78612583615" class="team__phone">+7 (861) 258-36-15</a>
-                    <a href="tel:+79184475510" class="team__phone">+7 (918) 447-55-10</a>
-
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="team__card">
-                  <div class="team__photo">
-                    <img src="./img/team/3.png" alt="фото" loading="lazy" width="208">
-                  </div>
-                  <div class="team__card-details">
-                    <span class="team__name">Светлана Викторовна</span>
-                    <span class="team__specialization">Начальник коммерческого отдела</span>
-                    <a href="tel:+79184744711" class="team__phone">+7 (918) 474-47-11</a>
-                    <a href="tel:+79184744711" class="team__phone">+7 (918) 474-47-11</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="team__card">
-                  <div class="team__photo">
-                    <img src="./img/team/4.png" alt="фото" loading="lazy" width="208">
-                  </div>
-                  <div class="team__card-details">
-                    <span class="team__name">Оксана Александровна</span>
-                    <span class="team__specialization">Менеджер по продажам</span>
-                    <a href="tel:+79184744711" class="team__phone">+7 (918) 474-47-11</a>
-                    <a href="tel:+79184744711" class="team__phone">+7 (918) 474-47-11</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="team__card">
-                  <div class="team__photo">
-                    <img src="./img/team/5.png" alt="фото" loading="lazy" width="208">
-                  </div>
-                  <div class="team__card-details">
-                    <span class="team__name">Александр Александрович</span>
-                    <span class="team__specialization">Торговый агент</span>
-                    <a href="tel:+79184744712" class="team__phone">+7 (918) 474-47-12</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="team__card">
-                  <div class="team__photo">
-                    <img src="./img/team/6.png" alt="фото" loading="lazy" width="208">
-                  </div>
-                  <div class="team__card-details">
-                    <span class="team__name">Дмитрий Сергеевич</span>
-                    <span class="team__specialization">Торговый агент</span>
-                    <a href="tel:+79891693987" class="team__phone">+7 (989) 169-39-87</a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <button class="swiper-button swiper-button-next" type="button">
-              <svg>
-                <use href="./svg/icons-sprite.svg#arrow"></use>
-              </svg>
-            </button>
-            <button class="swiper-button swiper-button-prev" type="button">
-              <svg>
-                <use href="./svg/icons-sprite.svg#arrow"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-
       <div class="composition" id="composition-static-2">
         <svg class="composition__branch" viewBox="0 0 865 801" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -1827,6 +1705,127 @@
             fill="#ABC453" />
         </svg>
 
+      </div>
+    </section>
+
+    <section class="section team">
+      <div class="wrapper">
+        <div class="swiper">
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="team__card">
+                <div class="team__photo">
+                  <img src="./img/team/1.png" alt="фото" loading="lazy" width="208">
+                </div>
+                <div class="team__card-details">
+                  <span class="team__name">Юрий Владимирович</span>
+                  <span class="team__specialization">Заместитель директора</span>
+                  <a href="tel:+79184744711" class="team__phone">+7 (918) 474-47-11</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="team__card">
+                <div class="team__photo">
+                  <img src="./img/team/2.png" alt="фото" loading="lazy" width="208">
+                </div>
+                <div class="team__card-details">
+                  <span class="team__name">Нина Эмильевна</span>
+                  <span class="team__specialization">Начальник коммерческого отдела</span>
+                  <a href="tel:+78612583615" class="team__phone">+7 (861) 258-36-15</a>
+                  <a href="tel:+79184475510" class="team__phone">+7 (918) 447-55-10</a>
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="team__card">
+                <div class="team__photo">
+                  <img src="./img/team/2.png" alt="фото" loading="lazy" width="208">
+                </div>
+                <div class="team__card-details">
+                  <span class="team__name">Нина Эмильевна</span>
+                  <span class="team__specialization">Начальник коммерческого отдела</span>
+                  <a href="tel:+78612583615" class="team__phone">+7 (861) 258-36-15</a>
+                  <a href="tel:+79184475510" class="team__phone">+7 (918) 447-55-10</a>
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="team__card">
+                <div class="team__photo">
+                  <img src="./img/team/3.png" alt="фото" loading="lazy" width="208">
+                </div>
+                <div class="team__card-details">
+                  <span class="team__name">Светлана Викторовна</span>
+                  <span class="team__specialization">Начальник коммерческого отдела</span>
+                  <a href="tel:+79184744711" class="team__phone">+7 (918) 474-47-11</a>
+                  <a href="tel:+79184744711" class="team__phone">+7 (918) 474-47-11</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="team__card">
+                <div class="team__photo">
+                  <img src="./img/team/4.png" alt="фото" loading="lazy" width="208">
+                </div>
+                <div class="team__card-details">
+                  <span class="team__name">Оксана Александровна</span>
+                  <span class="team__specialization">Менеджер по продажам</span>
+                  <a href="tel:+79184744711" class="team__phone">+7 (918) 474-47-11</a>
+                  <a href="tel:+79184744711" class="team__phone">+7 (918) 474-47-11</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="team__card">
+                <div class="team__photo">
+                  <img src="./img/team/5.png" alt="фото" loading="lazy" width="208">
+                </div>
+                <div class="team__card-details">
+                  <span class="team__name">Александр Александрович</span>
+                  <span class="team__specialization">Торговый агент</span>
+                  <a href="tel:+79184744712" class="team__phone">+7 (918) 474-47-12</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="team__card">
+                <div class="team__photo">
+                  <img src="./img/team/6.png" alt="фото" loading="lazy" width="208">
+                </div>
+                <div class="team__card-details">
+                  <span class="team__name">Дмитрий Сергеевич</span>
+                  <span class="team__specialization">Торговый агент</span>
+                  <a href="tel:+79891693987" class="team__phone">+7 (989) 169-39-87</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="swiper-button swiper-button-next" type="button">
+            <svg>
+              <use href="./svg/icons-sprite.svg#arrow"></use>
+            </svg>
+          </button>
+          <button class="swiper-button swiper-button-prev" type="button">
+            <svg>
+              <use href="./svg/icons-sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
 

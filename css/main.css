@@ -1208,7 +1208,8 @@ input:active, input:focus {
   width: 895px;
   height: 811px;
   top: -160px;
-  right: -50px;
+  right: 0;
+  overflow: hidden;
 }
 #composition-3 .composition__image {
   width: 688px;
@@ -1218,12 +1219,13 @@ input:active, input:focus {
 }
 #composition-3 .composition__branch {
   width: 447px;
-  top: -95px;
-  right: 55px;
+  top: 0;
+  right: -50px;
 }
 #composition-3 .composition__bg {
   width: 688px;
   right: 255px;
+  left: 15px;
 }
 
 #composition-static {
@@ -1660,16 +1662,16 @@ input:active, input:focus {
 }
 
 .team {
-  background-color: var(--color-beige);
-  margin-top: 303px;
   position: relative;
   z-index: 2;
+  max-width: 100%;
+  background-color: var(--color-pastel);
+  padding: 0;
 }
 .team__card {
   position: relative;
 }
 .team__photo {
-  position: absolute;
   bottom: 100%;
 }
 .team__photo img {
@@ -1711,8 +1713,8 @@ input:active, input:focus {
   z-index: 2;
   margin-bottom: 2px;
 }
-.team .swiper {
-  overflow: visible;
+.team .swiper-button {
+  top: calc(50% - 12px);
 }
 
 .swiper-button {

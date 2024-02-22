@@ -73,7 +73,8 @@
   width: 895px;
   height: 811px;
   top: -160px;
-  right: -50px;
+  right: 0;
+  overflow: hidden;
   .composition__image {
     width: 688px;
     // max-width: 688px;
@@ -83,14 +84,14 @@
   }
   .composition__branch {
     width: 447px;
-    top: -95px;
-    right: 55px;
+    top: 0;
+    right: -50px;
   }
   .composition__bg {
     width: 688px;
     right: 255px;
     // top: 290px;
-    // left: 15px;
+    left: 15px;
   }
 }
 

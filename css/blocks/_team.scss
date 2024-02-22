@@ -1,14 +1,18 @@
 .team {
-  background-color: var(--color-beige);
-  margin-top: calc(268px + 35px);
+  // background-color: var(--color-beige);
   position: relative;
   z-index: 2;
+  max-width: 100%;
+  // overflow: hidden;
+
+  background-color: var(--color-pastel);
+    padding: 0;
   &__card {
     position: relative;
   }
 
   &__photo {
-    position: absolute;
+    // position: absolute;
     bottom: 100%;
     img {
       display: block;
@@ -52,6 +56,12 @@
     margin-bottom: 2px;
   }
   .swiper {
-    overflow: visible;
+    // overflow: visible;
+  }
+  .swiper-slide {
+    // transform: translateY(-264px);
+  }
+  .swiper-button {
+    top: calc(50% - 12px);
   }
 }
