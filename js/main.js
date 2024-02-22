@@ -97,23 +97,53 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // делаем простые статичные элементы интерактивными
   // Находим все элементы с классом .icon-parent
-const iconParents = document.querySelectorAll('.icon-parent');
+  const iconParents = document.querySelectorAll('.icon-parent');
 
-// Функция для добавления класса .active
-function addActiveClass(event) {
-  event.currentTarget.classList.add('active');
-}
+  // Функция для добавления класса .active
+  function addActiveClass(event) {
+    event.currentTarget.classList.add('active');
+  }
 
-// Функция для удаления класса .active
-function removeActiveClass(event) {
-  event.currentTarget.classList.remove('active');
-}
+  // Функция для удаления класса .active
+  function removeActiveClass(event) {
+    event.currentTarget.classList.remove('active');
+  }
 
-// Добавляем обработчики событий для каждого элемента
-iconParents.forEach((iconParent) => {
-  iconParent.addEventListener('mouseover', addActiveClass);
-  iconParent.addEventListener('mouseout', removeActiveClass);
-});
+  // Добавляем обработчики событий для каждого элемента
+  iconParents.forEach((iconParent) => {
+    iconParent.addEventListener('mouseover', addActiveClass);
+    iconParent.addEventListener('mouseout', removeActiveClass);
+  });
+
+  // костыль с фоном у слайдера
+  // Находим все элементы с классом .team__card-details
+  const teamCardDetailsElements = document.querySelectorAll('.team__card-details');
+
+  let maxTeamSlideHeight = 0;
+
+  // Перебираем все найденные элементы и ищем максимальную высоту
+  teamCardDetailsElements.forEach(element => {
+    const elementHeight = element.offsetHeight;
+    if (elementHeight > maxTeamSlideHeight) {
+      maxTeamSlideHeight = elementHeight; // Обновляем максимальное значение, если находим большее
+    }
+  });
+
+  // После определения максимальной высоты, присваиваем это значение элементу с классом .team__bg
+  if (maxTeamSlideHeight > 0) { // Проверяем, что был найден хотя бы один элемент и его высота была измерена
+    const teamBg = document.querySelector('.team__bg');
+    if (teamBg) {
+      teamBg.style.height = `${maxTeamSlideHeight}px`;
+      console.log("Максимальная высота элементов .team__card-details установлена для .team__bg: ", maxTeamSlideHeight);
+    } else {
+      console.log("Элемент с классом .team__bg не найден на странице.");
+    }
+  } else {
+    console.log("Элементы с классом .team__card-details не найдены на странице.");
+  }
+
+
+
 
 
 

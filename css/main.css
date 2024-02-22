@@ -1671,6 +1671,16 @@ input:active, input:focus {
 .team__card {
   position: relative;
 }
+.team__bg {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-beige);
+  z-index: 0;
+  pointer-events: none;
+}
 .team__photo {
   bottom: 100%;
 }
