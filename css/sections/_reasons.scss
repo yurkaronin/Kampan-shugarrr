@@ -8,6 +8,9 @@
   &__benefits-list {
     margin-bottom: 63px;
   }
+  .wawe {
+    z-index: -1;
+  }
 
   @media (max-width: 1500px) {
     padding-top: 80px !important;

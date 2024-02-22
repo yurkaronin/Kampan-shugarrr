@@ -78,7 +78,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1.18;
-    max-width: 808px;
+    max-width: 790px;
+    text-wrap: balance;
   }
   &__text {
     margin: 0;
@@ -88,7 +89,8 @@
     font-weight: 400;
     line-height: 1.33;
     margin-bottom: 43px;
-    max-width: 808px;
+    max-width: 790px;
+    text-wrap: balance;
   }
   &__buttons {
     display: grid;

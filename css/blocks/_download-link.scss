@@ -1,7 +1,7 @@
 .download-link {
   display: grid;
-  gap: 24px;
-  grid-template-columns: 30px 1fr;
+  gap: 32px;
+  grid-template-columns: auto 1fr;
   font-family: var(--second-family);
   align-items: center;
   &__icon {

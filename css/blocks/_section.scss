@@ -6,6 +6,7 @@
 
   &:has(.wave) {
     padding-bottom: 300px;
+    z-index: 2;
   }
 
   &__grid {
@@ -20,7 +21,7 @@
 
     &:has(:not(.composition)) {
       position: relative;
-      z-index: 2;
+      z-index: 10;
     }
     &:has(.composition) {
       z-index: 0;

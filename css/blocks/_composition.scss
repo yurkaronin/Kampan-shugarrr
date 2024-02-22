@@ -14,6 +14,7 @@
   &__image {
     position: absolute;
     display: block;
+    max-width: initial;
   }
   &__branch {
     position: absolute;
@@ -32,6 +33,8 @@
   }
   .composition__image {
     width: 688px;
+    // max-width: 688px;
+
   }
   .composition__branch {
     bottom: -90px;
@@ -57,12 +60,131 @@
   }
   .composition__image {
     width: 633px;
+    // max-width: 633px;
   }
   .composition__branch {
     width: 650px;
     top: -95px;
     right: 55px;
   }
+}
+
+#composition-3 {
+  width: 895px;
+  height: 811px;
+  top: -160px;
+  right: -50px;
+  .composition__image {
+    width: 688px;
+    // max-width: 688px;
+    z-index: 2;
+    top: 190px;
+    left: 30px;
+  }
+  .composition__branch {
+    width: 447px;
+    top: -95px;
+    right: 55px;
+  }
+  .composition__bg {
+    width: 688px;
+    right: 255px;
+    // top: 290px;
+    // left: 15px;
+  }
+}
+
+#composition-static {
+  position: absolute;
+  width: 944px;
+  height: 1226px;
+  right: 0;
+  top: -265px;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+#composition-static-2 {
+  position: absolute;
+  width: 864px;
+  height: 800px;
+  right: 0;
+  top: -295px;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 3;
+  .composition__branch {
+    top: 0;
+    right: -55px;
+    width: 864px;
+  }
+}
+
+#composition-4 {
+  width: 808px;
+  height: 996px;
+  left: 65px;
+  top: 15px;
+
+  .composition__bg {
+    width: 689px;
+    bottom: 95px;
+    left: 180px;
+  }
+  .composition__image {
+    width: 688px;
+    // max-width: 688px;
+  }
+}
+
+#composition-5 {
+  width: 942px;
+  height: 838px;
+  top: -90px;
+  right: 0;
+  left: auto;
+
+  .composition__image {
+    width: 688px;
+    // max-width: 688px;
+    // z-index: 2;
+  }
+  .composition__branch {
+    width: 518px;
+    top: -40px;
+    right: 0;
+  }
+  .composition__bg {
+    width: 728px;
+    left: -50px;
+    top: 5px;
+  }
+}
+
+#composition-6 {
+  width: 970px;
+  height: 980px;
+  overflow: hidden;
+  top: -75px;
+  left: 0;
+  .composition__image {
+    width: 704px;
+    left: -5px;
+    z-index: 2;
+    top: 105px;
+  }
+  .composition__branch {
+    width: 1215px;
+    left: -260px;
+    top: 0;
+  }
+  .composition__bg {
+    width: 688px;
+    right: 75px;
+    top: 105px;
+  }
+
 }
 
 //   @media (max-width: 1023px) {

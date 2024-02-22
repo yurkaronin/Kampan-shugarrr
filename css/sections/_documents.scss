@@ -1,6 +1,11 @@
 .documents {
   background-color: var(--color-pearl);
   max-width: 100%;
+
+  &:has(.wave) {
+    padding-bottom: 390px;
+  }
+
   &__list {
     display: grid;
     gap: 32px;

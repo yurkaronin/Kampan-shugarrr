@@ -60,12 +60,12 @@
 @import
 "./utils/hidden-tablet",
 "./utils/visible-tablet",
-
 "./utils/hidden-mobile",
 "./utils/visible-mobile",
-
-"./utils/visually-hidden";
+"./utils/visually-hidden",
+"./utils/overflow-hidden";
 // pages
+
 
 // activity
 @import
@@ -73,13 +73,3 @@
 "./activity/menu-open",
 "./activity/icon-parent",
 "./activity/modal-open";
-
-.overflow-hidden {
-  max-width: 100%;
-  overflow: hidden;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-}

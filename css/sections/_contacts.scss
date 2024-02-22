@@ -31,6 +31,10 @@
     margin-left: auto;
   }
 
+  .section__grid {
+    margin-bottom: -10px;
+  }
+
   @media (max-width: 1500px) {
     .section__item-right {
       order: 1;

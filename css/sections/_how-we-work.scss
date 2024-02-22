@@ -1,5 +1,6 @@
 .how-we-work {
   background-color: var(--color-beige);
+  padding-bottom: 445px;
   &__steps-list {
     display: grid;
     gap: 40px 32px;
@@ -59,7 +60,7 @@
 
   }
   &__text {
-    padding-top: 15px;
+    padding-top: 16px;
   }
 
 }
