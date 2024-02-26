@@ -1,13 +1,9 @@
 .section {
   max-height: 100%;
   padding-top: 30px;
-  padding-bottom: 80px;
   position: relative;
-
-  &:has(.wave) {
-    padding-bottom: 300px;
-    z-index: 2;
-  }
+  padding-bottom: 300px;
+  z-index: 2;
 
   &__grid {
     display: grid;
@@ -33,7 +29,7 @@
   @media (max-width: 1500px) {
     &__grid {
       grid-template-columns: repeat(1, 1fr);
-      gap: 120px;
+      gap: 0;
     }
     &__grid--mod {
       grid-template-columns: repeat(12, 1fr);

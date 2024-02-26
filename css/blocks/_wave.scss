@@ -8,7 +8,7 @@
   background-size: cover;
   background-position: top left;
   background-image: url('../img/wave/wave-pearl.svg');
-  z-index: 2;
+  z-index: -1;
   &--misty {
     background-image: url('../img/wave/wave-misty.svg');
   }
