@@ -104,7 +104,6 @@
   .composition__branch {
     // top: 0;
     right: -55px;
-    // width: 864px;
   }
 }
 
@@ -188,7 +187,6 @@
     .composition__bg {
       bottom: initial;
       top: 30px;
-      // left: 100px;
       right: auto;
     }
 
@@ -204,6 +202,28 @@
   #composition-3 {
     width: 895px;
     height: 731px;
+    margin-top: -148px;
+    margin-right: 0;
+    overflow: visible;
+
+    .composition__image {
+      top: initial;
+      left: initial;
+      right: initial;
+      bottom: initial;
+    }
+    .composition__bg {
+      left: initial;
+      top: initial;
+      right: initial;
+      bottom: initial;
+    }
+    .composition__branch {
+      left: initial;
+      top: 0;
+      right: 0;
+      bottom: initial;
+    }
   }
   #composition-4 {
     width: 808px;
@@ -218,174 +238,3 @@
     height: 980px;
   }
 }
-
-//   @media (max-width: 1023px) {
-//     .composition__image {
-//       max-width: 616px;
-//     }
-//     .composition__bg {
-//       width: 590px;
-//       top: -35px;
-//       left: -35px;
-//     }
-//     .composition__branch {
-//       bottom: -190px;
-//       left: 90px;
-//       width: 880px;
-//     }
-//   }
-
-//   @media (max-width: 767px) {
-//     .composition__image {
-//       max-width: 300px;
-//       margin-left: 33px;
-//     }
-//     .composition__bg {
-//       width: 411px;
-//     }
-//     .composition__branch {
-//       left: 60px;
-//       width: 490px;
-//     }
-//   }
-// }
-
-// #composition-2 {
-//   transform: translateX(-65px);
-//   .composition__bg {
-//     width: 808px;
-//     left: -90px;
-//     top: -30px;
-//   }
-//   .composition__image {
-//     max-width: 633px;
-//   }
-//   .composition__branch {
-//     width: 650px;
-//     top: -423px;
-//     bottom: auto;
-//     right: 1px;
-//     left: auto;
-//   }
-// }
-
-// #composition-3 {
-//   transform: translateX(120px);
-//   .composition__bg {
-//     width: 688px;
-//     height: 504px;
-//     top: -40px;
-//     left: -80px;
-//   }
-//   .composition__image {
-//     max-width: 688px;
-//   }
-//   .composition__branch {
-//     width: 448px;
-//     height: 460px;
-//     top: -290px;
-//     bottom: auto;
-//     right: -120px;
-//     left: auto;
-//   }
-// }
-
-// #composition-4 {
-//   transform: translateX(-120px);
-
-//   .composition__bg {
-//     top: 184px;
-//     left: 120px;
-//   }
-// }
-
-// #composition-5 {
-//   transform: translate(115px, -150px);
-//   .composition__bg {
-//     top: -45px;
-//     left: -75px;
-//   }
-//   .composition__branch {
-//     left: auto;
-//     right: -185px;
-//     top: 140px;
-//   }
-// }
-
-// #composition-6 {
-//   transform: translate(-250px, 20px);
-//   margin-bottom: -80px;
-//   .composition__bg {
-//     left: 200px;
-//     top: -20px;
-//   }
-//   .composition__branch {
-//     top: -120px;
-//     left: -250px;
-//   }
-// }
-
-// @media (max-width: 1500px) {
-//   .composition {
-//     transform: initial !important;
-//     margin: 0 auto !important;
-//     max-width: max-content;
-//   }
-
-//   #composition-1 {
-//     .composition__image {
-//       margin: 0 auto;
-//       max-width: 688px;
-//     }
-//     .composition__bg {
-//       top: 0;
-//       left: 0;
-//       width: 940px;
-//       height: 688px;
-//     }
-//     .composition__branch {
-//       bottom: -140px;
-//       left: 260px;
-//       width: 780px;
-//       height: 632px;
-//     }
-//   }
-
-//   #composition-2 {
-//     .composition__image {
-//       max-width: 633px;
-//     }
-//     .composition__bg {
-//       width: 810px;
-//       left: -80px;
-//       height: 590px;
-//       top: -120px;
-//     }
-//     .composition__branch {
-//       width: 650px;
-//       height: 605px;
-//       right: -90px;
-//       top: -340px;
-//     }
-//   }
-
-//   #composition-5 {
-//     .composition__branch {
-//       right: -170px;
-//       top: -170px;
-//       z-index: 22;
-//     }
-//   }
-//   #composition-6 {
-//     transform: translateX(-40px) !important;
-
-//     .composition__image {
-//       width: 704px;
-//     }
-//     .composition__bg {
-//       width: 624px;
-//       left: 230px;
-//       top: 30px;
-//     }
-//   }
-// }
