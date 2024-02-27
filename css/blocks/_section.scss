@@ -27,6 +27,7 @@
 
 
   @media (max-width: 1500px) {
+    padding-bottom: 195px;
     &__grid {
       grid-template-columns: repeat(1, 1fr);
       gap: 0;

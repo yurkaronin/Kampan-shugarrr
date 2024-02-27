@@ -1,5 +1,4 @@
 .contacts {
-
   padding-bottom: 0;
   z-index: 3;
   &__list {
@@ -37,6 +36,7 @@
   }
 
   @media (max-width: 1500px) {
+    padding-top: 130px;
     .section__item-right {
       order: 1;
     }
@@ -56,5 +56,10 @@
     &__list {
       margin-bottom: 70px;
     }
+    .section__grid {
+      margin-bottom: 0;
+      gap: 72px;
+    }
+
   }
 }

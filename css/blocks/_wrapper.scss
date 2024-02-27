@@ -1,9 +1,14 @@
 .wrapper {
-  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  max-width: calc(var(--container-width) + 48px * 2);
   margin-inline: auto;
-  padding-inline: var(--container-padding-x);
+  padding-inline: 48px;
 
-  @include tablet-s {
-    padding-inline: calc(var(--container-padding-x) / 2);
+  @media (max-width: 1023px) {
+    max-width: calc(var(--container-width) + 40px * 2);
+    padding-inline: 40px;
+  }
+  @media (max-width: 767px) {
+    max-width: calc(var(--container-width) + 20px * 2);
+    padding-inline: 20px;
   }
 }

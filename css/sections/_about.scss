@@ -61,11 +61,29 @@
   }
 
   @media (max-width: 1500px) {
+    padding-bottom: 195px;
+    &__details-list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 43px;
+    }
+    &__details-item {
+      display: grid;
+      gap: 72px;
+      grid-template-columns: 328px 1fr;
+    }
+
+    .section__grid {
+      margin-bottom: 90px;
+    }
+
     .section__item-right {
       order: 1;
     }
     .section__item-left {
       order: 2;
+    }
+    .subtitle {
+      margin-bottom: 12px;
     }
   }
 }

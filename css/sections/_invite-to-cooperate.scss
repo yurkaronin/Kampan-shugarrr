@@ -2,6 +2,7 @@
   background-color: var(--color-white);
   padding-top: 115px;
   padding-bottom: 380px;
+
   &__text {
     margin-bottom: 34px;
   }
@@ -11,6 +12,9 @@
   }
 
   @media (max-width: 1500px) {
+    padding-bottom: 190px;
+    max-width: 100%;
+    overflow-x: hidden;
     .section__item-left {
       order: 2;
     }
@@ -18,6 +22,9 @@
       order: 1;
       margin-bottom: 0;
     }
+    .form__item:has(.button) {
+      margin-top: 0;
+  }
   }
 
 }

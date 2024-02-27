@@ -177,11 +177,15 @@
   #composition-1 {
     width: 768px;
     height: 940px;
-    right: 40px !important;
-    top: -150px !important;
+    // right: initial !important;
+    // top: initial !important;
     overflow: initial;
+    margin-top: -120px;
+    margin-bottom: 120px;
 
     .composition__image {
+      top: 50px;
+      left: 80px;
     }
 
     .composition__bg {
@@ -197,44 +201,102 @@
   }
   #composition-2 {
     width: 870px;
-    height: 867px;
+    height: 790px;
+    margin-top: -150px;
+
+    .composition__image {
+      top: 190px;
+      left: 135px;
+    }
+    .composition__bg {
+      top: 105px;
+      left: 30px;
+    }
   }
   #composition-3 {
     width: 895px;
     height: 731px;
-    margin-top: -148px;
+    margin-top: -140px;
     margin-right: 0;
     overflow: visible;
+    margin-bottom: 70px;
 
     .composition__image {
-      top: initial;
-      left: initial;
+      top: 210px;
+      left: 120px;
       right: initial;
       bottom: initial;
     }
     .composition__bg {
-      left: initial;
-      top: initial;
+      left: 30px;
       right: initial;
       bottom: initial;
+      top: 165px;
     }
     .composition__branch {
       left: initial;
-      top: 0;
-      right: 0;
+      top: 5px;
+      right: -35px;
       bottom: initial;
     }
   }
   #composition-4 {
     width: 808px;
     height: 966px;
+    margin-top: -150px;
+    overflow: visible;
+    margin-bottom: 40px;
   }
   #composition-5 {
     width: 886px;
     height: 918px;
+    margin-top: -230px;
+    margin-bottom: 75px;
+    overflow: visible;
+    .composition__image {
+      top: 175px;
+      left: 140px;
+    }
+    .composition__branch {
+      top: 0;
+      right: -115px;
+    }
+    .composition__bg {
+      left: 60px;
+      top: 135px;
+  }
   }
   #composition-6 {
     width: 968px;
     height: 980px;
+    margin-top: -140px;
+    margin-bottom: -100px;
+    overflow: visible;
+    .composition__image {
+      left: -45px !important;
+      top: 185px;
+    }
+    .composition__bg {
+      right: 110px;
+      top: 185px;
+  }
+  }
+
+  #composition-static {
+    top: 0 !important;
+    right: 0 !important;
+    svg {
+      right: -500px !important;
+      position: absolute;
+      top: -330px;
+    }
+  }
+  #composition-static-2 {
+    top: -185px !important;
+    right: 0 !important;
+
+    .composition__branch {
+      right: -105px;
+    }
   }
 }
