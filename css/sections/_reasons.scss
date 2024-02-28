@@ -13,8 +13,9 @@
   }
 
   @media (max-width: 1500px) {
-    padding-top: 150px !important;
-    padding-bottom: 195px !important;
+    padding-top: 70px;
+    padding-bottom: 190px;
+    // padding-bottom: 195px !important;
     // overflow: initial;
     &__grid {
       grid-template-columns: 1fr;
@@ -26,6 +27,9 @@
       max-width: max-content;
       margin: 0 auto;
       margin-right: 10%;
+    }
+    .section__grid {
+      gap: 186px;
     }
     .reasons__grid-item {
       order: 2;
@@ -49,9 +53,13 @@
     &__benefits-list {
       margin-bottom: 62px;
     }
+    .section__grid {
+      gap: 175px;
+    }
   }
   @media (max-width: 767px) {
-    padding-top: 420px !important;
+    padding-top: 445px;
+    padding-bottom: 90px;
     &__grid {
       gap: 88px;
     }
@@ -60,6 +68,10 @@
     }
     &__benefits-list {
       margin-bottom: 25px;
+    }
+
+    .section__grid {
+      gap: 90px;
     }
   }
 }

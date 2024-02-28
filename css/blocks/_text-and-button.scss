@@ -33,21 +33,24 @@
     margin-bottom: 0;
   }
 
-  @include desktop-s-rew {
+  @media (max-width: 1500px) {
     &__grid {
       grid-template-columns: 385px auto;
       gap: 50px;
     }
   }
 
-  @include tablet-rew {
+  @media (max-width: 1023px) {
     &__grid {
       grid-template-columns: 212px auto;
       gap: 16px;
     }
   }
 
-  @include tablet-s-rew {
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 20px;
+    }
     &__grid {
       grid-template-columns: 1fr;
       gap: 8px;
@@ -55,6 +58,8 @@
 
       .button {
         margin: 0 auto;
+        max-width: 100%;
+        justify-content: center;
       }
     }
   }

@@ -1,302 +1,444 @@
 .composition {
-  position: absolute;
-  width: 688px;
-  height: 688px;
-  pointer-events: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 11;
+  &__image {
+    display: block;
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+    pointer-events: none;
+  }
   &__bg {
     position: absolute;
-  }
-  &__image {
-    position: absolute;
-    display: block;
-    max-width: initial;
+    z-index: 1;
+    flex-shrink: 0;
+    pointer-events: none;
   }
   &__branch {
     position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    pointer-events: none;
   }
 }
 
 #composition-1 {
-  width: 770px;
-  height: 1309px;
-  right: 85px;
-  top: -200px;
+  .composition__main-group {
+    position: relative;
+  }
   .composition__bg {
-    bottom: 135px;
+    width: 688px;
     left: 0;
   }
   .composition__image {
+    width: 768px;
+    display: block;
+    margin-left: auto;
+    transform: translateX(120px);
   }
 
   .composition__branch {
-    bottom: -230px;
-    right: -240px;
+    bottom: 140px;
+    right: -200px;
+  }
+
+  .composition__branch-inner {
+    width: 980px;
   }
 }
 
 #composition-2 {
-  width: 870px;
-  height: 1045px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: -115px;
-  left: 60px;
-
-  .composition__bg {
-    top: 290px;
-    left: 15px;
+  .composition__main-group {
+    position: relative;
   }
+
   .composition__image {
-  }
-
-  .composition__branch {
-    top: -95px;
-    right: 55px;
-  }
-}
-
-#composition-3 {
-  width: 895px;
-  height: 811px;
-  top: -260px;
-  right: 0;
-  overflow: hidden;
-  .composition__image {
+    width: 633px;
+    transform: translateX(-95px);
     z-index: 2;
-    top: 285px;
-    left: 75px;
-  }
-  .composition__branch {
-    top: 0;
-    right: 0;
   }
   .composition__bg {
-    left: 0;
-    top: 250px;
+    width: 809px;
+    right: 20px;
+    bottom: -190px;
   }
-}
-
-#composition-static {
-  position: absolute;
-  width: 944px;
-  height: 1226px;
-  right: 0;
-  top: -265px;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 0;
-}
-
-#composition-static-2 {
-  position: absolute;
-  width: 864px;
-  height: 800px;
-  right: 0;
-  top: -295px;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 3;
   .composition__branch {
-    // top: 0;
-    right: -55px;
+    top: -445px;
+    right: 35px;
   }
-}
-
-#composition-4 {
-  width: 808px;
-  height: 996px;
-  left: 65px;
-  top: 15px;
-
-  .composition__bg {
-    bottom: 95px;
-    left: 180px;
-  }
-  .composition__image {
-  }
-}
-
-#composition-5 {
-  width: 942px;
-  height: 838px;
-  top: -90px;
-  right: 0;
-  left: auto;
-
-  .composition__image {
-  }
-
-  .composition__branch {
-    top: -50px;
-    right: -45px;
-  }
-  .composition__bg {
-    left: 50px;
-    top: 0;
-  }
-}
-
-#composition-6 {
-  width: 970px;
-  height: 980px;
-  overflow: hidden;
-  top: -75px;
-  left: 0;
-  .composition__image {
-    left: -10px;
-    z-index: 2;
-    top: 120px;
-  }
-
-  .composition__branch {
-    left: -260px;
-    top: 0;
-  }
-
-  .composition__bg {
-    right: 75px;
-    top: 105px;
+  .composition__branch-inner {
+    width: 672px;
   }
 }
 
 @media (max-width: 1500px) {
-  .composition {
-    position: relative;
-    top: initial !important;
-    left: initial !important;
-    right: initial !important;
-    bottom: initial !important;
-    margin: 0 auto;
-    overflow: hidden;
-  }
   #composition-1 {
-    width: 768px;
-    height: 940px;
-    // right: initial !important;
-    // top: initial !important;
-    overflow: initial;
-    margin-top: -120px;
-    margin-bottom: 120px;
-
+    position: relative;
     .composition__image {
-      top: 50px;
-      left: 80px;
+      width: 688px;
+      transform: translateX(40px);
     }
-
     .composition__bg {
-      bottom: initial;
-      top: 30px;
-      right: auto;
+      width: 616px;
+      left: -40px;
     }
-
     .composition__branch {
-      bottom: -180px;
-      right: -300px;
+      bottom: -245px;
+      right: -240px;
     }
   }
+
   #composition-2 {
-    width: 870px;
-    height: 790px;
-    margin-top: -150px;
-
     .composition__image {
-      top: 190px;
-      left: 135px;
+      transform: translateX(20px);
     }
     .composition__bg {
-      top: 105px;
-      left: 30px;
-    }
-  }
-  #composition-3 {
-    width: 895px;
-    height: 731px;
-    margin-top: -140px;
-    margin-right: 0;
-    overflow: visible;
-    margin-bottom: 70px;
-
-    .composition__image {
-      top: 210px;
-      left: 120px;
+      width: 809px;
+      left: -80px;
       right: initial;
       bottom: initial;
-    }
-    .composition__bg {
-      left: 30px;
-      right: initial;
-      bottom: initial;
-      top: 165px;
+      top: -80px;
     }
     .composition__branch {
-      left: initial;
-      top: 5px;
-      right: -35px;
-      bottom: initial;
+      top: -280px;
+      right: -80px;
     }
-  }
-  #composition-4 {
-    width: 808px;
-    height: 966px;
-    margin-top: -150px;
-    overflow: visible;
-    margin-bottom: 40px;
-  }
-  #composition-5 {
-    width: 886px;
-    height: 918px;
-    margin-top: -230px;
-    margin-bottom: 75px;
-    overflow: visible;
-    .composition__image {
-      top: 175px;
-      left: 140px;
-    }
-    .composition__branch {
-      top: 0;
-      right: -115px;
-    }
-    .composition__bg {
-      left: 60px;
-      top: 135px;
-  }
-  }
-  #composition-6 {
-    width: 968px;
-    height: 980px;
-    margin-top: -140px;
-    margin-bottom: -100px;
-    overflow: visible;
-    .composition__image {
-      left: -45px !important;
-      top: 185px;
-    }
-    .composition__bg {
-      right: 110px;
-      top: 185px;
-  }
-  }
-
-  #composition-static {
-    top: 0 !important;
-    right: 0 !important;
-    svg {
-      right: -500px !important;
-      position: absolute;
-      top: -330px;
-    }
-  }
-  #composition-static-2 {
-    top: -185px !important;
-    right: 0 !important;
-
-    .composition__branch {
-      right: -105px;
+    .composition__branch-inner {
+      width: 650px;
     }
   }
 }
+
+@media (max-width: 1023px) {
+  #composition-1 {
+    // justify-content: flex-end;
+    .composition__image {
+      width: 616px;
+      transform: initial;
+    }
+    .composition__bg {
+      left: -70px;
+    }
+    .composition__branch {
+      bottom: -165px;
+    }
+    .composition__branch-inner {
+      width: 790px;
+    }
+  }
+  #composition-2 {
+    .composition__image {
+      width: 540px;
+    }
+    .composition__bg {
+      width: 690px;
+    }
+    .composition__branch {
+      top: -255px;
+      right: 0;
+      transform: translateX(66px);
+    }
+    .composition__branch-inner {
+      width: 565px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #composition-1 {
+    .composition__image {
+      width: 300px;
+    }
+    .composition__bg {
+      left: -20px;
+      width: 301px;
+    }
+    .composition__branch-inner {
+      width: 545px;
+    }
+  }
+
+  #composition-2 {
+    .composition__image {
+      width: 262px;
+    }
+    .composition__bg {
+      width: 336px;
+      left: initial;
+      transform: translateX(-30px);
+      top: -35px;
+    }
+    .composition__branch-inner {
+      width: 285px;
+    }
+    .composition__branch {
+      top: -120px;
+      transform: translateX(55px);
+    }
+  }
+}
+
+// #composition-2 {
+//   width: 870px;
+//   height: 1045px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   top: -115px;
+//   left: 60px;
+
+//   .composition__bg {
+//     top: 290px;
+//     left: 15px;
+//   }
+//   .composition__image {
+//   }
+
+//   .composition__branch {
+//     top: -95px;
+//     right: 55px;
+//   }
+// }
+
+// #composition-3 {
+//   width: 895px;
+//   height: 811px;
+//   top: -260px;
+//   right: 0;
+//   overflow: hidden;
+//   .composition__image {
+//     z-index: 2;
+//     top: 285px;
+//     left: 75px;
+//   }
+//   .composition__branch {
+//     top: 0;
+//     right: 0;
+//   }
+//   .composition__bg {
+//     left: 0;
+//     top: 250px;
+//   }
+// }
+
+// #composition-static {
+//   position: absolute;
+//   width: 944px;
+//   height: 1226px;
+//   right: 0;
+//   top: -265px;
+//   pointer-events: none;
+//   overflow: hidden;
+//   z-index: 0;
+// }
+
+// #composition-static-2 {
+//   position: absolute;
+//   width: 864px;
+//   height: 800px;
+//   right: 0;
+//   top: -295px;
+//   pointer-events: none;
+//   overflow: hidden;
+//   z-index: 3;
+//   .composition__branch {
+//     // top: 0;
+//     right: -55px;
+//   }
+// }
+
+// #composition-4 {
+//   width: 808px;
+//   height: 996px;
+//   left: 65px;
+//   top: 15px;
+
+//   .composition__bg {
+//     bottom: 95px;
+//     left: 180px;
+//   }
+//   .composition__image {
+//   }
+// }
+
+// #composition-5 {
+//   width: 942px;
+//   height: 838px;
+//   top: -90px;
+//   right: 0;
+//   left: auto;
+
+//   .composition__image {
+//   }
+
+//   .composition__branch {
+//     top: -50px;
+//     right: -45px;
+//   }
+//   .composition__bg {
+//     left: 50px;
+//     top: 0;
+//   }
+// }
+
+// #composition-6 {
+//   width: 970px;
+//   height: 980px;
+//   overflow: hidden;
+//   top: -75px;
+//   left: 0;
+//   .composition__image {
+//     left: -10px;
+//     z-index: 2;
+//     top: 120px;
+//   }
+
+//   .composition__branch {
+//     left: -260px;
+//     top: 0;
+//   }
+
+//   .composition__bg {
+//     right: 75px;
+//     top: 105px;
+//   }
+// }
+
+// @media (max-width: 1500px) {
+//   .composition {
+//     position: relative;
+//     top: initial !important;
+//     left: initial !important;
+//     right: initial !important;
+//     bottom: initial !important;
+//     margin: 0 auto;
+//     overflow: hidden;
+//   }
+//   #composition-1 {
+//     width: 768px;
+//     height: 940px;
+//     // right: initial !important;
+//     // top: initial !important;
+//     overflow: initial;
+//     margin-top: -120px;
+//     margin-bottom: 120px;
+
+//     .composition__image {
+//       top: 50px;
+//       left: 80px;
+//     }
+
+//     .composition__bg {
+//       bottom: initial;
+//       top: 30px;
+//       right: auto;
+//     }
+
+//     .composition__branch {
+//       bottom: -180px;
+//       right: -300px;
+//     }
+//   }
+//   #composition-2 {
+//     width: 870px;
+//     height: 790px;
+//     margin-top: -150px;
+
+//     .composition__image {
+//       top: 190px;
+//       left: 135px;
+//     }
+//     .composition__bg {
+//       top: 105px;
+//       left: 30px;
+//     }
+//   }
+//   #composition-3 {
+//     width: 895px;
+//     height: 731px;
+//     margin-top: -140px;
+//     margin-right: 0;
+//     overflow: visible;
+//     margin-bottom: 70px;
+
+//     .composition__image {
+//       top: 210px;
+//       left: 120px;
+//       right: initial;
+//       bottom: initial;
+//     }
+//     .composition__bg {
+//       left: 30px;
+//       right: initial;
+//       bottom: initial;
+//       top: 165px;
+//     }
+//     .composition__branch {
+//       left: initial;
+//       top: 5px;
+//       right: -35px;
+//       bottom: initial;
+//     }
+//   }
+//   #composition-4 {
+//     width: 808px;
+//     height: 966px;
+//     margin-top: -150px;
+//     overflow: visible;
+//     margin-bottom: 40px;
+//   }
+//   #composition-5 {
+//     width: 886px;
+//     height: 918px;
+//     margin-top: -230px;
+//     margin-bottom: 75px;
+//     overflow: visible;
+//     .composition__image {
+//       top: 175px;
+//       left: 140px;
+//     }
+//     .composition__branch {
+//       top: 0;
+//       right: -115px;
+//     }
+//     .composition__bg {
+//       left: 60px;
+//       top: 135px;
+//   }
+//   }
+//   #composition-6 {
+//     width: 968px;
+//     height: 980px;
+//     margin-top: -140px;
+//     margin-bottom: -100px;
+//     overflow: visible;
+//     .composition__image {
+//       left: -45px !important;
+//       top: 185px;
+//     }
+//     .composition__bg {
+//       right: 110px;
+//       top: 185px;
+//   }
+//   }
+
+//   #composition-static {
+//     top: 0 !important;
+//     right: 0 !important;
+//     svg {
+//       right: -500px !important;
+//       position: absolute;
+//       top: -330px;
+//     }
+//   }
+//   #composition-static-2 {
+//     top: -185px !important;
+//     right: 0 !important;
+
+//     .composition__branch {
+//       right: -105px;
+//     }
+//   }
+// }

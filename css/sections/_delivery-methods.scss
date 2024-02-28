@@ -11,11 +11,28 @@
     align-items: center;
   }
 
-  @include desktop-s-rew {
+  @media (max-width: 1500px) {
+    padding-top: 168px;
     padding-bottom: 185px;
+
+    .section__grid {
+      gap: 230px;
+    }
   }
 
-  @include tablet-s-rew {
+  @media (max-width: 1023px) {
+
+    .section__grid {
+      gap: 195px;
+    }
+  }
+
+  @media (max-width: 767px) {
     padding-bottom: 145px;
+    padding-top: 60px;
+
+    .section__grid {
+      gap: 115px;
+    }
   }
 }
