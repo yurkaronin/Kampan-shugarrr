@@ -11,4 +11,7 @@
   span {
     color: var(--color-red);
   }
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
 }

@@ -65,4 +65,8 @@
       margin-bottom: 4px;
     }
   }
+
+  @media (max-width: 767px) {
+    gap: 32px;
+  }
 }

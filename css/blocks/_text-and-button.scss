@@ -55,12 +55,12 @@
       grid-template-columns: 1fr;
       gap: 8px;
       text-align: center;
-
-      .button {
-        margin: 0 auto;
-        max-width: 100%;
-        justify-content: center;
-      }
+    }
+    .button {
+      margin: 0 auto;
+      width: 100%;
+      justify-content: center;
+      max-width: 100%;
     }
   }
 }

@@ -25,4 +25,36 @@
     font-size: 20px;
     margin-bottom: 7px;
   }
+  @media (max-width: 1500px) {
+    padding-top: 55px;
+  }
+  @media (max-width: 1023px) {
+    padding-bottom: 100px;
+    #composition-static-1 {
+      display: none;
+    }
+    .section__grid {
+      grid-template-columns: 1fr;
+    }
+    .section__item-left {
+      grid-column: initial;
+    }
+    .section__item-right {
+      grid-column: initial;
+    }
+    &__feedback {
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 767px) {
+    &__list {
+      gap: 32px;
+    }
+    &__list-item {
+      grid-template-columns: 1fr !important;
+    }
+    .advantages__list-icon {
+      order: initial !important;
+  }
+  }
 }

@@ -7,16 +7,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
-  background-image: url('../img/wave/wave-pearl.svg');
+  background-image: url("../img/wave/wave-pearl.svg");
   z-index: -1;
   &--misty {
-    background-image: url('../img/wave/wave-misty.svg');
+    background-image: url("../img/wave/wave-misty.svg");
   }
   &--white {
-    background-image: url('../img/wave/wave-white.svg');
+    background-image: url("../img/wave/wave-white.svg");
   }
   &--silver {
-    background-image: url('../img/wave/wave-silver.svg');
+    background-image: url("../img/wave/wave-silver.svg");
   }
   /* Сохранение аспектного соотношения */
   height: 0;

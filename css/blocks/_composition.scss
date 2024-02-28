@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: none;
   &__image {
     display: block;
     position: relative;
@@ -21,6 +22,20 @@
     bottom: 0;
     z-index: 2;
     pointer-events: none;
+    height: max-content;
+  }
+}
+
+.composition-static {
+  pointer-events: none;
+}
+
+#composition-static-1 {
+  position: absolute;
+  top: -185px;
+  right: 0;
+  .composition-static__inner {
+    width: 749px;
   }
 }
 
@@ -73,6 +88,27 @@
   }
 }
 
+#composition-3 {
+  .composition__main-group {
+    position: initial;
+  }
+
+  .composition__image {
+    width: 688px;
+  }
+  .composition__bg {
+    width: 688px;
+    transform: translate(35px, -35px);
+  }
+  .composition__branch {
+    top: -278px;
+    right: 0;
+  }
+  .composition__branch-inner {
+    width: 447px;
+  }
+}
+
 @media (max-width: 1500px) {
   #composition-1 {
     position: relative;
@@ -109,11 +145,41 @@
       width: 650px;
     }
   }
+
+  #composition-3 {
+    .composition__main-group {
+      position: initial;
+    }
+
+    .composition__image {
+      transform: initial;
+    }
+    .composition__bg {
+      transform: translate(-85px, -35px);
+    }
+    .composition__branch {
+      transform: initial;
+      right: 0;
+      overflow: hidden;
+      top: -200px;
+    }
+    .composition__branch-inner {
+      transform: translateX(-40px);
+    }
+  }
+
+  #composition-static-1 {
+    overflow-x: hidden;
+    top: -105px;
+    .composition-static__inner {
+      width: 780px;
+      transform: translateX(430px);
+    }
+  }
 }
 
 @media (max-width: 1023px) {
   #composition-1 {
-    // justify-content: flex-end;
     .composition__image {
       width: 616px;
       transform: initial;
@@ -142,6 +208,26 @@
     }
     .composition__branch-inner {
       width: 565px;
+    }
+  }
+  #composition-3 {
+    .composition__main-group {
+    }
+
+    .composition__image {
+      width: 616px;
+      transform: translateX(35px);
+    }
+    .composition__bg {
+      width: 616px;
+      transform: translate(-35px, -65px);
+    }
+    .composition__branch {
+      top: -80px;
+    }
+    .composition__branch-inner {
+      transform: translateX(70px);
+      width: 400px;
     }
   }
 }
@@ -176,6 +262,27 @@
     .composition__branch {
       top: -120px;
       transform: translateX(55px);
+    }
+  }
+
+  #composition-3 {
+    .composition__main-group {
+    }
+
+    .composition__image {
+      width: 300px;
+      transform: translateX(18px);
+    }
+    .composition__bg {
+      width: 300px;
+      transform: translate(-17px, -20px);
+    }
+    .composition__branch {
+      top: -40px;
+    }
+    .composition__branch-inner {
+      transform: translateX(48px);
+      width: 195px;
     }
   }
 }

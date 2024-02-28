@@ -62,6 +62,7 @@
 
   @media (max-width: 1500px) {
     padding-bottom: 195px;
+    padding-top: 90px;
     &__details-list {
       grid-template-columns: repeat(1, 1fr);
       gap: 43px;
@@ -74,6 +75,7 @@
 
     .section__grid {
       margin-bottom: 90px;
+      gap: 78px;
     }
 
     .section__item-right {
@@ -86,7 +88,35 @@
       margin-bottom: 12px;
     }
   }
+  @media (max-width: 1023px) {
+    padding-top: 105px;
+
+    .section__grid {
+      gap: 72px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding-bottom: 90px;
+    padding-top: 50px;
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+      margin-bottom: 36px;
+    }
+    &__details-item {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    &__document-list {
+      gap: 15px;
+  }
+    .text-and-button__grid {
+      grid-template-columns: 1fr;
+    }
+    .section__grid {
+      gap: 45px;
+      margin-bottom: 55px;
+    }
+  }
 }
-
-
-
