@@ -1,5 +1,7 @@
 .how-we-work {
   background-color: var(--color-beige);
+  max-width: 100%;
+  overflow: hidden;
 
   &__steps-list {
     display: grid;
@@ -62,7 +64,6 @@
       background-color: var(--color-white);
       transition: all 0.3s;
     }
-
   }
   &__text {
     padding-top: 16px;
@@ -70,6 +71,12 @@
 
   @media (max-width: 1500px) {
     padding-bottom: 205px !important;
+    overflow: initial;
   }
-
+  @media (max-width: 767px) {
+    &__steps-list {
+      gap: 30px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 }

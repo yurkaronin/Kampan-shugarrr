@@ -2,6 +2,7 @@
   background-color: var(--color-beige);
   padding-bottom: 325px;
 
+
   .section__item-right {
     position: relative;
     z-index: 2;
@@ -21,7 +22,6 @@
   }
 
   @media (max-width: 1023px) {
-
     .section__grid {
       gap: 195px;
     }
