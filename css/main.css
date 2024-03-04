@@ -1117,6 +1117,14 @@ input[type=radio].visually-hidden {
   .form__grid--mod {
     gap: 20px;
   }
+  .form__item.icon::before {
+    top: 10px;
+    left: 20px;
+  }
+  .form__item.icon input,
+  .form__item.icon textarea {
+    padding-left: 54px;
+  }
 }
 
 input {
@@ -1261,6 +1269,30 @@ input:active, input:focus {
   transform: translate(0, 185px);
 }
 
+#composition-5 {
+  transform: translate(0, -35px);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#composition-5 .composition__bg {
+  width: 523px;
+  transform: translate(-210px, -40px);
+}
+#composition-5 .composition__image {
+  width: 688px;
+  transform: translate(-130px, 0);
+}
+#composition-5 .composition__branch {
+  top: -100px;
+  right: 0;
+  overflow: hidden;
+}
+#composition-5 .composition__branch-inner {
+  width: 518px;
+  transform: translate(50px, 0);
+}
+
 @media (max-width: 1500px) {
   #composition-1 {
     position: relative;
@@ -1321,6 +1353,21 @@ input:active, input:focus {
   }
   #composition-4 .composition__bg {
     transform: translate(80px, 185px);
+  }
+  #composition-5 {
+    position: relative;
+    transform: translate(0, -225px);
+    margin-bottom: 20px;
+  }
+  #composition-5 .composition__image {
+    transform: translate(40px, 175px);
+  }
+  #composition-5 .composition__bg {
+    transform: translate(-40px, 125px);
+  }
+  #composition-5 .composition__branch {
+    top: 0;
+    right: -48px;
   }
   #composition-static-1 {
     overflow-x: hidden;
@@ -1386,6 +1433,27 @@ input:active, input:focus {
     transform: translate(55px, 160px);
     width: 586px;
   }
+  #composition-5 {
+    position: relative;
+    transform: translate(0, -200px);
+    margin-bottom: 40px;
+  }
+  #composition-5 .composition__image {
+    width: 617px;
+    transform: translate(35px, 165px);
+  }
+  #composition-5 .composition__bg {
+    transform: translate(-35px, 125px);
+    width: 478px;
+  }
+  #composition-5 .composition__branch {
+    top: 0;
+    right: -40px;
+  }
+  #composition-5 .composition__branch-inner {
+    width: 465px;
+    transform: translate(115px, 0);
+  }
 }
 @media (max-width: 767px) {
   #composition-1 .composition__image {
@@ -1440,6 +1508,27 @@ input:active, input:focus {
   #composition-4 .composition__bg {
     transform: translate(25px, 80px);
     width: 286px;
+  }
+  #composition-5 {
+    position: relative;
+    transform: translate(0, -160px);
+    margin-bottom: -30px;
+  }
+  #composition-5 .composition__image {
+    width: 300px;
+    transform: translate(15px, 90px);
+  }
+  #composition-5 .composition__bg {
+    transform: translate(-320px, 70px);
+    width: 233px;
+  }
+  #composition-5 .composition__branch {
+    top: 0;
+    right: -20px;
+  }
+  #composition-5 .composition__branch-inner {
+    width: 226px;
+    transform: translate(55px, 0);
   }
 }
 .benefits-list {
@@ -2703,14 +2792,12 @@ input:active, input:focus {
   background-color: var(--color-beige);
   max-width: 100%;
   overflow: hidden;
+  padding-bottom: 230px;
 }
 .how-we-work__steps-list {
   display: grid;
   gap: 40px 32px;
   grid-template-columns: repeat(2, 1fr);
-}
-.how-we-work:has(.wave) {
-  padding-bottom: 445px;
 }
 .how-we-work__item {
   display: grid;
@@ -2785,14 +2872,10 @@ input:active, input:focus {
 .invite-to-cooperate__text {
   margin-bottom: 34px;
 }
-.invite-to-cooperate .section__item-right {
-  margin-bottom: -145px;
-}
 @media (max-width: 1500px) {
   .invite-to-cooperate {
     padding-bottom: 190px;
     max-width: 100%;
-    overflow-x: hidden;
   }
   .invite-to-cooperate .section__item-left {
     order: 2;
@@ -2803,6 +2886,19 @@ input:active, input:focus {
   }
   .invite-to-cooperate .form__item:has(.button) {
     margin-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .invite-to-cooperate {
+    padding-bottom: 90px;
+  }
+  .invite-to-cooperate .form__grid {
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .invite-to-cooperate__text {
+    margin-bottom: 22px;
+    font-size: 14px;
   }
 }
 

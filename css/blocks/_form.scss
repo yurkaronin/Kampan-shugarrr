@@ -24,6 +24,7 @@
       color: var(--color-red);
     }
   }
+
   &__item {
     &.icon {
       position: relative;
@@ -110,6 +111,16 @@
     }
     &__grid--mod {
       gap: 20px;
+    }
+    &__item.icon::before {
+      top: 10px;
+      left: 20px;
+    }
+    &__item.icon {
+      input,
+      textarea {
+        padding-left: 54px;
+      }
     }
   }
 }

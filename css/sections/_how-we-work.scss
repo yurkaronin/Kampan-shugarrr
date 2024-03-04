@@ -2,15 +2,12 @@
   background-color: var(--color-beige);
   max-width: 100%;
   overflow: hidden;
+  padding-bottom: 230px;
 
   &__steps-list {
     display: grid;
     gap: 40px 32px;
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  &:has(.wave) {
-    padding-bottom: 445px;
   }
 
   &__item {

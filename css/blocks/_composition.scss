@@ -123,6 +123,30 @@
   }
 }
 
+#composition-5 {
+  transform: translate(0, -35px);
+  position: absolute;
+  right: 0;
+  top: 0;
+  .composition__bg {
+    width: 523px;
+    transform: translate(-210px, -40px);
+  }
+  .composition__image {
+    width: 688px;
+    transform: translate(-130px, 0);
+  }
+  .composition__branch {
+    top: -100px;
+    right: 0;
+    overflow: hidden;
+  }
+  .composition__branch-inner {
+    width: 518px;
+    transform: translate(50px, -0);
+  }
+}
+
 @media (max-width: 1500px) {
   #composition-1 {
     position: relative;
@@ -190,6 +214,23 @@
     }
     .composition__bg {
       transform: translate(80px, 185px);
+    }
+  }
+  #composition-5 {
+    position: relative;
+    // overflow: initial;
+    transform: translate(0, -225px);
+    margin-bottom: 20px;
+
+    .composition__image {
+      transform: translate(40px, 175px);
+    }
+    .composition__bg {
+      transform: translate(-40px, 125px);
+    }
+    .composition__branch {
+      top: 0;
+      right: -48px;
     }
   }
 
@@ -267,6 +308,28 @@
       width: 586px;
     }
   }
+  #composition-5 {
+    position: relative;
+    transform: translate(0, -200px);
+    margin-bottom: 40px;
+
+    .composition__image {
+      width: 617px;
+      transform: translate(35px, 165px);
+    }
+    .composition__bg {
+      transform: translate(-35px, 125px);
+      width: 478px;
+    }
+    .composition__branch {
+      top: 0;
+      right: -40px;
+    }
+    .composition__branch-inner {
+      width: 465px;
+      transform: translate(115px, 0);
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -281,7 +344,6 @@
     .composition__branch-inner {
       width: 545px;
     }
-
   }
 
   #composition-2 {
@@ -304,8 +366,6 @@
   }
 
   #composition-3 {
-    .composition__main-group {
-    }
 
     .composition__image {
       width: 300px;
@@ -333,6 +393,28 @@
     .composition__bg {
       transform: translate(25px, 80px);
       width: 286px;
+    }
+  }
+  #composition-5 {
+    position: relative;
+    transform: translate(0, -160px);
+    margin-bottom: -30px;
+
+    .composition__image {
+      width: 300px;
+      transform: translate(15px, 90px);
+    }
+    .composition__bg {
+      transform: translate(-320px, 70px);
+      width: 233px;
+    }
+    .composition__branch {
+      top: 0;
+      right: -20px;
+    }
+    .composition__branch-inner {
+      width: 226px;
+      transform: translate(55px, 0);
     }
   }
 }

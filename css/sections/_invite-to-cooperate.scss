@@ -7,14 +7,9 @@
     margin-bottom: 34px;
   }
 
-  .section__item-right {
-    margin-bottom: -145px;
-  }
-
   @media (max-width: 1500px) {
     padding-bottom: 190px;
     max-width: 100%;
-    overflow-x: hidden;
     .section__item-left {
       order: 2;
     }
@@ -24,7 +19,18 @@
     }
     .form__item:has(.button) {
       margin-top: 0;
-  }
+    }
   }
 
+  @media (max-width: 767px) {
+    padding-bottom: 90px;
+    .form__grid {
+      gap: 20px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__text {
+      margin-bottom: 22px;
+      font-size: 14px;
+    }
+  }
 }
