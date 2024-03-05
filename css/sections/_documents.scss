@@ -27,4 +27,19 @@
       gap: 110px;
     }
   }
+  @media (max-width: 1023px) {
+    .section__grid {
+      gap: 140px;
+    }
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 90px !important;
+    .section__grid {
+      gap: 56px;
+    }
+    &__list {
+      gap: 12px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
