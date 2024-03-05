@@ -1197,6 +1197,24 @@ input:active, input:focus {
   width: 749px;
 }
 
+#composition-static-2 {
+  position: absolute;
+  right: 0;
+  top: -290px;
+  z-index: 2;
+  pointer-events: none;
+  overflow: hidden;
+  width: 864px;
+  height: 800px;
+}
+#composition-static-2 .composition__branch {
+  position: initial;
+  display: block;
+  object-fit: cover;
+  object-position: left;
+  transform: translate(62px, 0);
+}
+
 #composition-1 .composition__main-group {
   position: relative;
 }
@@ -1425,6 +1443,12 @@ input:active, input:focus {
     width: 780px;
     transform: translateX(430px);
   }
+  #composition-static-2 {
+    top: -80px;
+  }
+  #composition-static-2 .composition__branch {
+    transform: translate(145px, 0);
+  }
 }
 @media (max-width: 1023px) {
   #composition-1 .composition__image {
@@ -1620,6 +1644,14 @@ input:active, input:focus {
   #composition-6 .composition__branch-inner {
     transform: translate(-265px, 0);
     width: 660px;
+  }
+  #composition-static-2 {
+    top: -40px;
+    width: 509px;
+    height: 472px;
+  }
+  #composition-static-2 .composition__branch {
+    transform: translate(160px, 0);
   }
 }
 .benefits-list {
@@ -2046,7 +2078,38 @@ input:active, input:focus {
   margin-bottom: 2px;
 }
 .team .swiper-button {
-  top: calc(50% - 12px);
+  top: 240px;
+}
+@media (max-width: 1023px) {
+  .team .swiper-button {
+    top: 240px;
+  }
+}
+@media (max-width: 549px) {
+  .team .team__photo {
+    max-width: max-content;
+    margin: 0 auto;
+    height: 240px;
+  }
+  .team .team__photo img {
+    height: 100%;
+    width: auto;
+  }
+  .team .team__card-details {
+    max-width: max-content;
+    margin: 0 auto;
+  }
+  .team .swiper-button {
+    top: 50%;
+  }
+  .team .swiper-button-next {
+    right: 4px;
+    left: auto;
+  }
+  .team .swiper-button-prev {
+    right: auto;
+    left: 4px;
+  }
 }
 
 .swiper-button {
@@ -2662,6 +2725,11 @@ input:active, input:focus {
   }
 }
 
+@media (max-width: 767px) {
+  .navigation__footer {
+    grid-template-columns: 1fr 100px;
+  }
+}
 .delivery-methods {
   background-color: var(--color-beige);
   padding-bottom: 325px;
@@ -3001,6 +3069,7 @@ input:active, input:focus {
 .contacts {
   padding-bottom: 0;
   z-index: 3;
+  position: relative;
 }
 .contacts__list {
   display: grid;
@@ -3060,9 +3129,39 @@ input:active, input:focus {
     gap: 72px;
   }
 }
+@media (max-width: 1023px) {
+  .contacts {
+    padding-top: 245px;
+  }
+  .contacts .map {
+    margin-left: 0;
+    max-width: 568px;
+  }
+  .contacts .map__content {
+    max-width: 568px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts {
+    padding-top: 150px;
+  }
+  .contacts .map {
+    margin-left: auto;
+    max-width: 335px;
+    height: 215px;
+  }
+  .contacts .map__content {
+    max-width: 335px;
+    height: 215px;
+  }
+  .contacts .section__grid {
+    gap: 46px;
+  }
+}
 
 .documents {
   background-color: var(--color-pearl);
+  padding-bottom: 210px;
 }
 .documents__list {
   display: grid;
@@ -3079,7 +3178,7 @@ input:active, input:focus {
 }
 @media (max-width: 1500px) {
   .documents {
-    padding-bottom: 195px !important;
+    padding-bottom: 160px !important;
     overflow: initial;
   }
   .documents .composition {
@@ -3269,6 +3368,34 @@ input:active, input:focus {
   }
   .modal__body {
     padding: 26px 32px 32px;
+  }
+  .modal .form__grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .modal .form .form__item--2 {
+    grid-column: initial;
+  }
+  .modal .modal__body {
+    width: 100% !important;
+    padding: 20px 20px 30px;
+  }
+  .modal .button-close {
+    right: 30px;
+  }
+  .modal .title {
+    margin-bottom: 12px;
+    font-size: 24px;
+    padding-bottom: 12px;
+  }
+  .modal .partners-list {
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 24px;
+  }
+  .modal .wrapper {
+    max-width: 100% !important;
+    width: 100%;
   }
 }
 .footer {
@@ -3504,6 +3631,9 @@ input[type=radio].visually-hidden {
   opacity: 1;
   visibility: initial;
   pointer-events: initial;
+}
+.menu-open .header__flex {
+  border-bottom: 1px solid var(--color-white-mod-02);
 }
 
 .icon-parent.active .group-icon {

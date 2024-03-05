@@ -25,6 +25,18 @@ if (document.querySelector('.team .swiper')) {
       1022: {
         slidesPerView: 3,
         spaceBetween: 10
+      },
+      550: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      425: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10
       }
     }
   });

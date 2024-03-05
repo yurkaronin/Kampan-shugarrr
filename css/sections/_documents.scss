@@ -1,5 +1,6 @@
 .documents {
   background-color: var(--color-pearl);
+  padding-bottom: 210px;
 
   &__list {
     display: grid;
@@ -18,7 +19,7 @@
   }
 
   @media (max-width: 1500px) {
-    padding-bottom: 195px !important;
+    padding-bottom: 160px !important;
     overflow: initial;
     .composition {
       max-width: 100%;

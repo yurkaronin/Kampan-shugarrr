@@ -1,6 +1,7 @@
 .contacts {
   padding-bottom: 0;
   z-index: 3;
+  position: relative;
   &__list {
     display: grid;
     gap: 16px;
@@ -60,6 +61,34 @@
       margin-bottom: 0;
       gap: 72px;
     }
+  }
 
+  @media (max-width: 1023px) {
+    padding-top: 245px;
+    .map {
+      margin-left: 0;
+      max-width: 568px;
+    }
+
+    .map__content {
+      max-width: 568px;
+
+    }
+  }
+  @media (max-width: 767px) {
+    padding-top: 150px;
+    .map {
+      margin-left: auto;
+      max-width: 335px;
+      height: 215px;
+    }
+
+    .map__content {
+      max-width: 335px;
+      height: 215px;
+    }
+    .section__grid {
+      gap: 46px;
+  }
   }
 }

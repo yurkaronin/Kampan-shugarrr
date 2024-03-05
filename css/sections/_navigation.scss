@@ -136,7 +136,6 @@
     display: none;
   }
 
-
   @include tablet-rew {
     &__list {
       grid-template-columns: repeat(1, 1fr);
@@ -166,5 +165,10 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
+  }
+}
+@media (max-width: 767px) {
+  .navigation__footer {
+    grid-template-columns: 1fr 100px;
   }
 }

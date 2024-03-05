@@ -8,4 +8,7 @@
     visibility: initial;
     pointer-events: initial;
   }
+  .header__flex {
+    border-bottom: 1px solid var(--color-white-mod-02);
+  }
 }
