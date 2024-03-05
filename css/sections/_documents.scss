@@ -1,10 +1,5 @@
 .documents {
   background-color: var(--color-pearl);
-  max-width: 100%;
-
-  &:has(.wave) {
-    padding-bottom: 390px;
-  }
 
   &__list {
     display: grid;
@@ -24,8 +19,12 @@
 
   @media (max-width: 1500px) {
     padding-bottom: 195px !important;
+    overflow: initial;
     .composition {
       max-width: 100%;
+    }
+    .section__grid {
+      gap: 110px;
     }
   }
 }

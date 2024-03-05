@@ -1293,6 +1293,38 @@ input:active, input:focus {
   transform: translate(50px, 0);
 }
 
+#composition-6 .composition__bg {
+  width: 688px;
+  position: relative;
+  transform: translate(-40px, 5px);
+}
+#composition-6 .composition__image--wrap {
+  width: 704px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  z-index: 4;
+}
+#composition-6 .composition__image {
+  width: 854px;
+  transform: translate(-15px, 10px);
+}
+#composition-6 .composition__branch {
+  bottom: initial;
+  right: initial;
+  top: -45px;
+  z-index: 2;
+  width: 968px;
+  height: 777px;
+  overflow: hidden;
+  left: 0;
+  top: -60px;
+}
+#composition-6 .composition__branch-inner {
+  width: 1214px;
+  transform: translate(-290px, 0);
+}
+
 @media (max-width: 1500px) {
   #composition-1 {
     position: relative;
@@ -1368,6 +1400,22 @@ input:active, input:focus {
   #composition-5 .composition__branch {
     top: 0;
     right: -48px;
+  }
+  #composition-6 .composition__image--wrap {
+    top: 35px;
+  }
+  #composition-6 .composition__image {
+    transform: translate(-15px, 0);
+  }
+  #composition-6 .composition__bg {
+    transform: translate(40px, 45px);
+  }
+  #composition-6 .composition__branch {
+    top: -110px;
+    left: 0;
+  }
+  #composition-6 .composition__branch-inner {
+    transform: translate(-240px, 0);
   }
   #composition-static-1 {
     overflow-x: hidden;
@@ -2967,10 +3015,6 @@ input:active, input:focus {
 
 .documents {
   background-color: var(--color-pearl);
-  max-width: 100%;
-}
-.documents:has(.wave) {
-  padding-bottom: 390px;
 }
 .documents__list {
   display: grid;
@@ -2988,9 +3032,13 @@ input:active, input:focus {
 @media (max-width: 1500px) {
   .documents {
     padding-bottom: 195px !important;
+    overflow: initial;
   }
   .documents .composition {
     max-width: 100%;
+  }
+  .documents .section__grid {
+    gap: 110px;
   }
 }
 
